@@ -35,6 +35,7 @@ namespace DataServiceLib
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql(_connectionString);
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

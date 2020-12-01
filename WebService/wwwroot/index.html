@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Imdb</h1>
+    <script src="js/dataService.js"></script>
+
+    
+
+    <input data-bind="textInput: firstName" />
+ 
+    <button data-bind="click: clickButton">Search</button>
+
+    <ul data-bind="foreach: names">
+        <li>
+            <span data-bind="text: name"></span>
+            <button data-bind="click: $parent.deleteName">Del</button>
+        </li>
+    </ul>
+
+
+    <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
+</body>
+</html>

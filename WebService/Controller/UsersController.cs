@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using ProjectPortfolio2_Group11.Authentication.Services;
 using ProjectPortfolio2_Group11.Model;
+using System.Threading.Tasks;
 
 
 namespace ProjectPortfolio2_Group11.Controller
@@ -29,18 +30,22 @@ namespace ProjectPortfolio2_Group11.Controller
             _configuration = configuration;
         }
 
-        [HttpGet("{userId}")]
+  
+        [HttpGet("{userId}", Name = nameof(GetUser))]
+
+        //[HttpGet("{userId}")]
         public IActionResult GetUser(int userId)
         {
             var user = _dataServiceFacade.UsersDs.GetUser(userId);
+            Task.Delay(2000);
             if (user == null)
             {
                 return NotFound("user not found");
             }
             return Ok(_mapper.Map<UsersDto>(user));
         }
-        
-        [HttpPost("new")]
+
+        [HttpPost]
         public IActionResult CreateUsers(UsersForCreationDto usersForCreationDto)
         {
             var user = _mapper.Map<Users>(usersForCreationDto);
@@ -62,6 +67,7 @@ namespace ProjectPortfolio2_Group11.Controller
         [HttpDelete("{userId}")]
         public IActionResult DeleteUser(int userId)
         {
+            Task.Delay(2000);
             var response = " user not found";
             if (!_dataServiceFacade.UsersDs.DeleteUser(userId))
             {

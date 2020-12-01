@@ -31,6 +31,7 @@ namespace ProjectPortfolio2_Group11
 
             app.UseJwtAuth();
             app.UseRouting();
+            app.UseFileServer();
 
             app.UseEndpoints(endpoints =>
             {
