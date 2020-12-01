@@ -9,9 +9,19 @@
         return firstName();
     });
      
-    let deleteUser = url => fetch("api/users/4", {
-        method: "DELETE"
-    });
+    let deleteUser = url => fetch("api/users/5", { method: "DELETE" });
+
+    //deleteUser("api/users/5");
+
+    let createUsers = function (users, callback) {
+        let headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        fetch("api/users", { method: "POST", body: JSON.stringify(users), headers })
+            .then(response => response.json())
+            .then(data => callback(data));
+    }
+
+  
 
     let clickButton = function() {
         names.push({ name: fullName() });
@@ -33,6 +43,6 @@
         firstName,
         clickButton,
         names,
-        deleteUser
+        deleteUser, createUsers
     };
 });

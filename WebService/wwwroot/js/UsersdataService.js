@@ -10,21 +10,20 @@ let getUsers = function(callback) {
             callback(data);
         });
 };
+/*
 
-let createUsers = function (users, callback) {
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    fetch("api/users/5", { method: "POST", body: JSON.stringify(users), headers })
-        .then(response => response.json())
-        .then(data => callback(data));
-}
 
-let deleteUsers = url => fetch(url, {
-    method: "DELETE"
+
+getUsers = (function (data) {
+    console.log(data);
 });
 
+createUsers({ userid: 4, name: 'ksfjsalkdjakdl', age:5, username:'wfo', language:'oweig' },
+    function(data) {
+        console.log(data);
+    });
 
-//deleteUsers("api/users/2");
+*/
 
 console.log("After fetch");
 
