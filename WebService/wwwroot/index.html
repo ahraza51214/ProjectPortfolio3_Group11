@@ -6,18 +6,17 @@
 </head>
 <body>
     <h1>Imdb</h1>
-    <script src="js/dataService.js"></script>
+  
 
-    
+    <button data-bind="click: clickButton">createUsers</button>
+
 
     <input data-bind="textInput: firstName" />
- 
-    <button data-bind="click: clickButton">Search</button>
-
+     
     <ul data-bind="foreach: names">
         <li>
             <span data-bind="text: name"></span>
-            <button data-bind="click: $parent.deleteName">Del</button>
+            <button data-bind="click: $parent.deleteUser">deleteUsers</button>
         </li>
     </ul>
 

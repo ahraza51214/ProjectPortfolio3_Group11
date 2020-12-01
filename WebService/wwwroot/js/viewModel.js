@@ -2,27 +2,23 @@
     //private part
    
     let names = ko.observableArray(
-        [{ name: "Peter" }, { name: "Sue" }, { name: "Ellen" }]);
-    let firstName = ko.observable("Peter");
-    let lastName = ko.observable("Smith");
+        [{ name: "" }]);
+    let firstName = ko.observable("");
+     
     let fullName = ko.computed(function() {
-        return firstName() + " " + lastName();
+        return firstName();
     });
-
-    let deleteName = function(data) {
-        names.remove(data);
-    }
+     
+    let deleteUser = url => fetch("api/users/4", {
+        method: "DELETE"
+    });
 
     let clickButton = function() {
         names.push({ name: fullName() });
-        firstName("");
-        lastName("");
-
-    }
-
-   
+        }
+     
     
-    fetch("api/users/1")
+    fetch("api/users/2")
    
         .then(function (response) {
             return response.json();
@@ -35,10 +31,8 @@
     //public part
     return {
         firstName,
-        lastName,
-        fullName,
         clickButton,
         names,
-        deleteName
+        deleteUser
     };
 });

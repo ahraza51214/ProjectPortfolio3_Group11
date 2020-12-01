@@ -24,7 +24,7 @@ let deleteUsers = url => fetch(url, {
 });
 
 
-deleteUsers("api/users/2");
+//deleteUsers("api/users/2");
 
 console.log("After fetch");
 
