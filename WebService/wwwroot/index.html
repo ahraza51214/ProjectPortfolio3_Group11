@@ -19,7 +19,7 @@
 
     <ul data-bind="foreach: names">
         <li>
-            <span data-bind="text: name"></span>
+            <span data-bind="text: username + ' ' + name + ' ' "></span>
             <button data-bind="click: $parent.deleteUser">deleteUsers</button>
         </li>
     </ul>

@@ -2,7 +2,7 @@
     //private part
 
     let names = ko.observableArray(
-        [{ name: "" }]);
+        [{ username: "" }], [{ name: "" }]);
 
     let userId = ko.observable();
      
@@ -15,7 +15,7 @@
             .then(response => response.json())
             .then(data => callback(data));
     }
-    
+    // make computed observable for create and update
 
    /* createUsers({ userid: 0, name: 'ksfjsalkdjakdl', age: 5, username: 'wfo', language: 'oweig' },
         function (data) {
