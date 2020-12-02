@@ -1,6 +1,7 @@
 ﻿
 console.log("Before fetch");
 
+/*
 let getUsers = function(callback) {
     fetch("api/users/1") // fetch returns a promise object, that uses a then method
         .then(function(response) {

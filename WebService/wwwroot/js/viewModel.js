@@ -1,17 +1,12 @@
 ﻿define(['knockout'], function (ko) {
     //private part
-   
+
     let names = ko.observableArray(
         [{ name: "" }]);
-    let firstName = ko.observable("");
-     
-    let fullName = ko.computed(function() {
-        return firstName();
-    });
-     
-    let deleteUser = url => fetch("api/users/5", { method: "DELETE" });
 
-    //deleteUser("api/users/5");
+    let userId = ko.observable();
+     
+    let deleteUser = url => fetch("api/users/" + userId() , { method: "DELETE" });
 
     let createUsers = function (users, callback) {
         let headers = new Headers();
@@ -20,29 +15,32 @@
             .then(response => response.json())
             .then(data => callback(data));
     }
-
-  
-
-    let clickButton = function() {
-        names.push({ name: fullName() });
-        }
-     
     
-    fetch("api/users/2")
-   
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            names(data);
-        });
+
+   /* createUsers({ userid: 0, name: 'ksfjsalkdjakdl', age: 5, username: 'wfo', language: 'oweig' },
+        function (data) {
+            console.log(data);
+        }); 
+    */
+      
+    let getUsers = function (users, callback) {
+        fetch("api/users/"+userId())
+        //fetch("api/users/+UserInput) observable knockout binding array something.
+
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                names(data);
+            });
+    }
 
 
     //public part
     return {
-        firstName,
-        clickButton,
-        names,
+         
+        
+        names, userId ,getUsers,
         deleteUser, createUsers
     };
 });

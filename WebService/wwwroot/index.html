@@ -7,11 +7,15 @@
 <body>
     <h1>Imdb</h1>
 
- 
+    <button data-bind="click: getUsers">GetUsers</button>
 
     <button data-bind="click: createUsers">createUsers</button>
 
-    <input data-bind="textInput: firstName" />
+    
+
+    <input data-bind="value: userId " required>
+
+    <div data-bind="text: userId "></div>
 
     <ul data-bind="foreach: names">
         <li>
