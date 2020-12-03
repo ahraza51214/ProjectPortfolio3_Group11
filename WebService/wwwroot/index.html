@@ -23,40 +23,54 @@
                 <button data-bind="click: $parent.deleteUser">deleteUsers</button>
             </li>
         </ul>
+
+
+
+        <h4>
+            Name
+            <input data-bind="value: name" required>
+        </h4>
+
+        <h4>
+            Age
+            <input data-bind="value: age" required>
+        </h4>
+
+        <h4>
+            Username
+            <input data-bind="value: username" required>
+        </h4>
+
+        <h4>
+            Language
+            <input data-bind="value: language" required>
+        </h4>
         <button data-bind="click: createUsers">createEmptyUsers</button>
-
-
-        <input data-bind="value: name" required>
-        <input data-bind="value: age" required>
-        <input data-bind="value: username" required>
-        <input data-bind="value: language" required>
-
     </div>
 
+    <div>    . </div>
 
     <div data-bind="with:bookmarkviewModel ">
 
-        <button data-bind="click: prevButtib">getBookmarks</button>
-
-        
+        <button data-bind="click: GetBookmarks">getBookmarks</button>
 
 
 
         <ul data-bind="foreach: bookmarks">
             <li>
                 <span data-bind="text: nconst + ' '  "></span>
-                <button data-bind="click: $parent.deleteBookmark">deleteBookmark</button>
+                <button data-bind="click: $parent.DeleteBookmark">deleteBookmark</button>
             </li>
         </ul>
         <button data-bind="click: createBookmark">createNewBookmark</button>
 
 
-       
+
         <input data-bind="value: nconst" required>
     </div>
 
 
-        <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
+    <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
 
 

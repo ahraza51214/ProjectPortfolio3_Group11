@@ -17,7 +17,7 @@
             let headers = new Headers();
             headers.append("Content-Type", "application/json");
             fetch("api/users", {
-                method: "POST", body: JSON.stringify({ age:+age() }) , headers
+                method: "POST", body: JSON.stringify({ age:+age(),name:name(),username:username(),language:language() }) , headers
             })
                 .then(response => response.json())
                 .then(data => callback(data))
