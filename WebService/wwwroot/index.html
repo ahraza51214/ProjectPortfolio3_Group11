@@ -9,13 +9,10 @@
 
     <button data-bind="click: getUsers">GetUsers</button>
 
-    <button data-bind="click: createUsers">createUsers</button>
-
-    
 
     <input data-bind="value: userId " required>
 
-    <div data-bind="text: userId "></div>
+
 
     <ul data-bind="foreach: names">
         <li>
@@ -23,7 +20,11 @@
             <button data-bind="click: $parent.deleteUser">deleteUsers</button>
         </li>
     </ul>
+    <button data-bind="click: createUsers">createEmptyUsers</button>
 
+    <input data-bind="value: jsonData" required>
+
+   
 
     <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 </body>
