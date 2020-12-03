@@ -5,27 +5,65 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Imdb</h1>
-
-    <button data-bind="click: getUsers">GetUsers</button>
-
-
-    <input data-bind="value: userId " required>
+    <h1>Movie application</h1>
 
 
 
-    <ul data-bind="foreach: names">
-        <li>
-            <span data-bind="text: username + ' ' + name + ' ' "></span>
-            <button data-bind="click: $parent.deleteUser">deleteUsers</button>
-        </li>
-    </ul>
-    <button data-bind="click: createUsers">createEmptyUsers</button>
+    <div data-bind="with:userviewModel ">
+        <button data-bind="click: getUsers">GetUsers</button>
 
-    <input data-bind="value: jsonData" required>
 
-   
+        <input data-bind="value: userId " required>
 
-    <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
+
+
+        <ul data-bind="foreach: names">
+            <li>
+                <span data-bind="text: username + ' ' + name + ' ' "></span>
+                <button data-bind="click: $parent.deleteUser">deleteUsers</button>
+            </li>
+        </ul>
+        <button data-bind="click: createUsers">createEmptyUsers</button>
+
+
+        <input data-bind="value: name" required>
+        <input data-bind="value: age" required>
+        <input data-bind="value: username" required>
+        <input data-bind="value: language" required>
+
+    </div>
+
+
+    <div data-bind="with:bookmarkviewModel ">
+
+        <button data-bind="click: prevButtib">getBookmarks</button>
+
+        
+
+
+
+        <ul data-bind="foreach: bookmarks">
+            <li>
+                <span data-bind="text: nconst + ' '  "></span>
+                <button data-bind="click: $parent.deleteBookmark">deleteBookmark</button>
+            </li>
+        </ul>
+        <button data-bind="click: createBookmark">createNewBookmark</button>
+
+
+       
+        <input data-bind="value: nconst" required>
+    </div>
+
+
+        <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
+
+
+
 </body>
 </html>
+
+
+
+
+

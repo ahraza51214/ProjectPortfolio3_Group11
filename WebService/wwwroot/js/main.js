@@ -1,5 +1,4 @@
-﻿/// <reference path="lib/knockout/knockout-latest.js" />
-
+﻿
 
 require.config({
     baseUrl: "js",
@@ -9,7 +8,18 @@ require.config({
 });
 
 
-require(['knockout', 'viewModel'], function (ko, vm) {
-    //console.log(vm.name);
-    ko.applyBindings(vm);
+
+
+
+require(['knockout', 'BookmarkviewModel', 'UserviewModel'], function (ko, bookmarkviewModel, userviewModel) {
+    var viewmodel = {
+        bookmarkviewModel, userviewModel
+    }
+   
+    ko.applyBindings(viewmodel);
+
 });
+
+
+
+
