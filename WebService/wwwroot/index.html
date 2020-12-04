@@ -10,20 +10,17 @@
 
 
     <div data-bind="with:userviewModel ">
-        <button data-bind="click: getUsers">GetUsers</button>
+        <button data-bind="click:  getUsers">GetUsers</button>
 
 
         <input data-bind="value: userId " required>
 
-
-
         <ul data-bind="foreach: names">
             <li>
-                <span data-bind="text: username + ' ' + name + ' ' "></span>
+                <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
                 <button data-bind="click: $parent.deleteUser">deleteUsers</button>
             </li>
         </ul>
-
 
 
         <h4>
@@ -67,10 +64,33 @@
 
 
         <input data-bind="value: nconst" required>
+
+        <div> .  </div>
     </div>
 
+    <div data-bind="with:searchviewModel ">
 
-    <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
+        <button data-bind="click: getSearch">GetSearch</button>
+        Userid <input data-bind="value: userId" required>
+
+        <ul data-bind="foreach:  mysearch">
+            <li>
+                <span data-bind="text:   'Search_Input: ´' + searchInput+ '´'    "></span>
+
+
+            </li>
+        </ul>
+
+
+        
+        <h4>
+            SearchInput
+            <input data-bind="value: SearchInput" required>
+        </h4>
+
+    </div>
+
+        <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
 
 

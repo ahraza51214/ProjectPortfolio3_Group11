@@ -1,12 +1,12 @@
 ﻿define(['knockout'], function (ko) {
     //private part
     
-    let names = ko.observableArray(
-    [{ username: "" }], [{ name: "" }]);
-
+    this.names = ko.observableArray(
+        [{ language: "" , name:"" , username:"",age:0 }]);
+   
     let userId = ko.observable();
     let name = ko.observable('');
-    let age = ko.observable(5);
+    let age = ko.observable(0);
     let username = ko.observable();
     let language = ko.observable();
      
@@ -23,13 +23,7 @@
                 .then(data => callback(data))
                 ;
         }
-
      
-          //  fetch("api/users", { method: "POST", body: JSON.stringify({ name: 'test', age: 5, username: 'Textualcontent', language: 'lolz' }), headers })
-    // make computed observable for create and update
-     
- 
-    
     let getUsers = function (users, callback) {
         fetch("api/users/"+userId())
   

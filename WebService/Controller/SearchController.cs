@@ -9,7 +9,7 @@ using ProjectPortfolio2_Group11.Model;
 namespace ProjectPortfolio2_Group11.Controller
 {
     [ApiController]
-    [Route("api/Search")]
+    [Route("api/search")]
     public class SearchController : ControllerBase
     {
         private readonly DataServiceFacade _dataServiceFacade;
@@ -22,7 +22,7 @@ namespace ProjectPortfolio2_Group11.Controller
             _mapper = mapper;
         }
         
-        [Authorization]
+       /* [Authorization]
         [HttpGet("{userId}")]
         public IActionResult GetSearchHistory(int userId)
         { 
@@ -40,7 +40,22 @@ namespace ProjectPortfolio2_Group11.Controller
             {
                 return Unauthorized();
             }
-        }
+        } */
+
+        [HttpGet("{userId}")]
+        public IActionResult GetSearchHistory(int userId)
+        { 
+                var search = _dataServiceFacade.SearchDs.GetSearchHistory(userId, userId);
+                if (search == null)
+                {
+                    return NotFound();
+                }
+                return Ok(search);
+            }
+            
+     
+
+
 
         [HttpPost("{userId}", Name = nameof(AddToSearchHistory))]
         public IActionResult AddToSearchHistory(int page, int pageSize, SearchHistoryDto searchDto)
