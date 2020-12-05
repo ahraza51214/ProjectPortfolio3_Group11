@@ -12,7 +12,7 @@
 
     <div data-bind="with:userviewModel ">
         <button data-bind="click:  getUsers">GetUsers</button>
-        <button data-bind="click: $parent.deleteUser">deleteUsers</button>
+        <button data-bind="click: deleteUser">deleteUsers</button>
 
         <input data-bind="value: userId " required>
 
@@ -53,7 +53,7 @@
     <div data-bind="with:bookmarkviewModel ">
 
         <button data-bind="click: GetBookmarks">getBookmarks</button>
-        <button data-bind="click: $parent.DeleteBookmark">deleteBookmark</button>
+        <button data-bind="click: DeleteBookmark">deleteBookmark</button>
 
 
         <ul data-bind="foreach: bookmarks">
