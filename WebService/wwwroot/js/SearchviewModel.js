@@ -1,11 +1,11 @@
 ﻿define(['knockout'], function (ko) {
     //private part
 
- 
+  
     // strings perhaps 
 
     this.mysearch = ko.observableArray(
-        [{ userId: 0, searchInput: "Search"}]);
+        [{ searchInput: "Search", dateTime:0 }]);
 
     let SearchInput = ko.observable();
 
@@ -30,7 +30,7 @@
             let headers = new Headers();
             headers.append("Content-Type", "application/json");
         fetch("api/search/" +userId(), {
-            method: "POST", body: JSON.stringify({ userid: +userId(), Strings: SearchInput() }) , headers
+            method: "POST", body: JSON.stringify({ userid: +userId(), searchInput: SearchInput() }) , headers
             })
                 .then(response => response.json())
                 .then(data => callback(data))

@@ -75,18 +75,20 @@
 
         <ul data-bind="foreach:  mysearch">
             <li>
-                <span data-bind="text:   'Search_Input: ´' + searchInput+ '´'    "></span>
+                <span data-bind="text:  'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime"></span>
 
 
             </li>
         </ul>
 
 
-        
+
         <h4>
             SearchInput
             <input data-bind="value: SearchInput" required>
         </h4>
+
+        <button data-bind="click: createSearch">Search</button>
 
     </div>
 

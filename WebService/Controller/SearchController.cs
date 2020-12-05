@@ -54,9 +54,6 @@ namespace ProjectPortfolio2_Group11.Controller
             }
             
      
-
-
-
         [HttpPost("{userId}", Name = nameof(AddToSearchHistory))]
         public IActionResult AddToSearchHistory(int page, int pageSize, SearchHistoryDto searchDto)
         {
