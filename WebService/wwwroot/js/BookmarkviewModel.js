@@ -2,7 +2,7 @@
     //private part
 
     let bookmarks = ko.observableArray(
-        [{ nconst: "" }], [{ userid: "" }]);
+        [{ nconst: "" , userId: "" }]);
 
     let nconst = ko.observable();
     let userid = ko.observable('');

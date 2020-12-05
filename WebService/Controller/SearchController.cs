@@ -21,28 +21,29 @@ namespace ProjectPortfolio2_Group11.Controller
             _dataServiceFacade = dataServiceFacade;
             _mapper = mapper;
         }
-        
-       /* [Authorization]
-        [HttpGet("{userId}")]
-        public IActionResult GetSearchHistory(int userId)
-        { 
-            try
-            {
-                var user = Request.HttpContext.Items["User"] as UsersForAuth;
-                var search = _dataServiceFacade.SearchDs.GetSearchHistory(user.UserId, userId);
-                if (search == null)
-                {
-                    return NotFound();
-                }
-                return Ok(search);
-            }
-            catch (Exception)
-            {
-                return Unauthorized();
-            }
-        } */
+        // uncomment the code below  for enabling authorization
 
-        [HttpGet("{userId}")]
+        /* [Authorization]
+         [HttpGet("{userId}")]
+         public IActionResult GetSearchHistory(int userId)
+         { 
+             try
+             {
+                 var user = Request.HttpContext.Items["User"] as UsersForAuth;
+                 var search = _dataServiceFacade.SearchDs.GetSearchHistory(user.UserId, userId);
+                 if (search == null)
+                 {
+                     return NotFound();
+                 }
+                 return Ok(search);
+             }
+             catch (Exception)
+             {
+                 return Unauthorized();
+             }
+         } */
+
+        [HttpGet("{userId}")] // comment the below HTTPGet method for enabling authorization
         public IActionResult GetSearchHistory(int userId)
         { 
                 var search = _dataServiceFacade.SearchDs.GetSearchHistory(userId, userId);
@@ -51,9 +52,11 @@ namespace ProjectPortfolio2_Group11.Controller
                     return NotFound();
                 }
                 return Ok(search);
-            }
-            
-     
+        } // comment the above HTTPGet method for enabling authorization
+
+
+        //[HttpPost("{userId}/{searchInput}", Name = nameof(AddToSearchHistory))]
+
         [HttpPost("{userId}", Name = nameof(AddToSearchHistory))]
         public IActionResult AddToSearchHistory(int page, int pageSize, SearchHistoryDto searchDto)
         {

@@ -158,3 +158,4 @@ C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\obj\Debug\netco
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\obj\Debug\netcoreapp3.1\WebService.genruntimeconfig.cache
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettingsRaw11.json

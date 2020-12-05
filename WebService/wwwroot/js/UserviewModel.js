@@ -2,29 +2,39 @@
     //private part
     
     this.names = ko.observableArray(
-        [{ language: "" , name:"" , username:"",age:0 }]);
+        [{ language: "" , name:"" , username:"",age:"" }]);
    
     let userId = ko.observable();
     let name = ko.observable('');
-    let age = ko.observable(0);
+    let age = ko.observable();
     let username = ko.observable();
     let language = ko.observable();
      
     let deleteUser = url => fetch("api/users/" + userId(), { method: "DELETE" });
      
-    let createUsers = function (users, callback) {
+    let createUsers = function () {
 
-            let headers = new Headers();
-            headers.append("Content-Type", "application/json");
-            fetch("api/users", {
-                method: "POST", body: JSON.stringify({ age:+age(),name:name(),username:username(),language:language() }) , headers
-            })
-                .then(response => response.json())
-                .then(data => callback(data))
-                ;
-        }
-     
-    let getUsers = function (users, callback) {
+        let headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        fetch("api/users", {
+            method: "POST", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language() }), headers
+        })
+            .then(response => response.json());
+    }
+              
+    let updateUsers = function () {
+
+        let headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        fetch("api/users/" + userId(), {
+            method: "PUT", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language() }), headers
+        })
+            .then(response => response.json())
+            ;
+    }
+
+
+    let getUsers = function () {
         fetch("api/users/"+userId())
   
 
@@ -42,6 +52,6 @@
         age, language, username, name,
         
         names, userId ,getUsers,
-        deleteUser, createUsers
+        deleteUser, createUsers,updateUsers
     };
 });

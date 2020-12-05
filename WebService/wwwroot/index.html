@@ -11,14 +11,14 @@
 
     <div data-bind="with:userviewModel ">
         <button data-bind="click:  getUsers">GetUsers</button>
-
+        <button data-bind="click: $parent.deleteUser">deleteUsers</button>
 
         <input data-bind="value: userId " required>
 
         <ul data-bind="foreach: names">
             <li>
                 <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
-                <button data-bind="click: $parent.deleteUser">deleteUsers</button>
+
             </li>
         </ul>
 
@@ -42,7 +42,9 @@
             Language
             <input data-bind="value: language" required>
         </h4>
-        <button data-bind="click: createUsers">createEmptyUsers</button>
+
+        <button data-bind="click: createUsers">createUsers</button>
+        <button data-bind="click: updateUsers">updateUsers</button>
     </div>
 
     <div>    . </div>
@@ -50,13 +52,13 @@
     <div data-bind="with:bookmarkviewModel ">
 
         <button data-bind="click: GetBookmarks">getBookmarks</button>
-
+        <button data-bind="click: $parent.DeleteBookmark">deleteBookmark</button>
 
 
         <ul data-bind="foreach: bookmarks">
             <li>
-                <span data-bind="text: nconst + ' '  "></span>
-                <button data-bind="click: $parent.DeleteBookmark">deleteBookmark</button>
+                <span data-bind="text: nconst + ' ' + userId  "></span>
+
             </li>
         </ul>
         <button data-bind="click: createBookmark">createNewBookmark</button>
@@ -75,12 +77,10 @@
 
         <ul data-bind="foreach:  mysearch">
             <li>
-                <span data-bind="text:  'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime"></span>
-
+                <span data-bind="text:   'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime " ></span>
 
             </li>
         </ul>
-
 
 
         <h4>
@@ -89,6 +89,16 @@
         </h4>
 
         <button data-bind="click: createSearch">Search</button>
+
+        <ul data-bind="foreach:  resultSearch">
+            <li>
+                <span data-bind="text:   JSON.stringify(search)  "></span>
+                <div> <span data-bind="text:   'previous page ' + prev "></span> </div>
+                <div> <span data-bind="text:   'current page ' + current "></span> </div>
+                <div> <span data-bind="text:   'next page '+ next "></span> </div>
+
+            </li>
+        </ul>
 
     </div>
 

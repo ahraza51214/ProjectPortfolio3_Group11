@@ -33,7 +33,7 @@ namespace ProjectPortfolio2_Group11.Controller
   
         [HttpGet("{userId}", Name = nameof(GetUser))]
 
-        //[HttpGet("{userId}")]
+      
         public IActionResult GetUser(int userId)
         {
             var user = _dataServiceFacade.UsersDs.GetUser(userId);
@@ -68,7 +68,7 @@ namespace ProjectPortfolio2_Group11.Controller
         [HttpDelete("{userId}")]
         public IActionResult DeleteUser(int userId)
         {
-            Task.Delay(2000);
+            
             var response = " user not found";
             if (!_dataServiceFacade.UsersDs.DeleteUser(userId))
             {
