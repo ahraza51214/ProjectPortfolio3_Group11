@@ -163,7 +163,7 @@ namespace DataServiceLib
             modelBuilder.Entity<TitleRateDto>().Property(x => x.Tconst).HasColumnName("tconst_");
             modelBuilder.Entity<TitleRateDto>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
             modelBuilder.Entity<TitleRateDto>().Property(x => x.NumVotes).HasColumnName("numvotes");
-            modelBuilder.Entity<TitleRateDto>().Property(x => x.MyRating).HasColumnName("myrating");
+            modelBuilder.Entity<TitleRateDto>().Property(x => x.Average).HasColumnName("average");
             modelBuilder.Entity<TitleRateDto>().HasNoKey();
                     
             //TitleBasicsDto used for the String_Search() function

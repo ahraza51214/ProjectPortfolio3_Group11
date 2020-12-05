@@ -7,6 +7,7 @@
 <body>
     <h1>Movie application</h1>
 
+    <h3>User profile</h3>
 
 
     <div data-bind="with:userviewModel ">
@@ -26,19 +27,13 @@
         <h4>
             Name
             <input data-bind="value: name" required>
-        </h4>
 
-        <h4>
             Age
             <input data-bind="value: age" required>
-        </h4>
 
-        <h4>
             Username
             <input data-bind="value: username" required>
-        </h4>
 
-        <h4>
             Language
             <input data-bind="value: language" required>
         </h4>
@@ -47,7 +42,9 @@
         <button data-bind="click: updateUsers">updateUsers</button>
     </div>
 
-    <div>    . </div>
+    <div>
+        <h1>Bookmark</h1>
+    </div>
 
     <div data-bind="with:bookmarkviewModel ">
 
@@ -67,7 +64,9 @@
 
         <input data-bind="value: nconst" required>
 
-        <div> .  </div>
+        <div>
+            <h1>Search</h1>
+        </div>
     </div>
 
     <div data-bind="with:searchviewModel ">
@@ -77,7 +76,7 @@
 
         <ul data-bind="foreach:  mysearch">
             <li>
-                <span data-bind="text:   'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime " ></span>
+                <span data-bind="text:   'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime "></span>
 
             </li>
         </ul>
@@ -86,6 +85,11 @@
         <h4>
             SearchInput
             <input data-bind="value: SearchInput" required>
+
+            Page
+            <input data-bind="value: page" required>
+            Result Size
+            <input data-bind="value: pageSize" required>
         </h4>
 
         <button data-bind="click: createSearch">Search</button>
@@ -93,16 +97,14 @@
         <ul data-bind="foreach:  resultSearch">
             <li>
                 <span data-bind="text:   JSON.stringify(search)  "></span>
-                <div> <span data-bind="text:   'previous page ' + prev "></span> </div>
-                <div> <span data-bind="text:   'current page ' + current "></span> </div>
-                <div> <span data-bind="text:   'next page '+ next "></span> </div>
+           
 
             </li>
         </ul>
 
     </div>
 
-        <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
+    <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
 
 

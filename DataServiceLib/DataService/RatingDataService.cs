@@ -33,7 +33,7 @@ namespace DataServiceLib.DataService
 
         if (userTitleRate.TitleIndividRating > 10)
     {
-        throw new System.ArgumentException("Rating cannot be above 10", "original");
+        throw new System.ArgumentException("Rating cannot be above 10");
     }
           
             var queery = _db.RatingTable.FromSqlInterpolated($"select * from rate({userTitleRate.UserId},{userTitleRate.TConst},{userTitleRate.TitleIndividRating})");

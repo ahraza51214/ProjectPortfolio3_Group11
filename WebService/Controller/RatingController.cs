@@ -51,7 +51,7 @@ namespace ProjectPortfolio2_Group11.Controller
             return Ok(_mapper.Map<UserTitleRateDto>(userTitleRate));
         }
         
-        [HttpPost("{userId}")]
+        [HttpPost]
         public IActionResult CreateRating(UserTitleRateForCreationDto userTitleRateForCreationDto)
         {
             var userTitleRate = _mapper.Map<UserTitleRate>(userTitleRateForCreationDto);
