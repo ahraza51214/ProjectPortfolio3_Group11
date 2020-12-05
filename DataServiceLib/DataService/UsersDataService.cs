@@ -39,6 +39,8 @@ namespace DataServiceLib.DataService
             dbUser.Age = user.Age;
             dbUser.Language = user.Language;
             dbUser.Username = user.Username;
+            dbUser.Password = user.Password;
+            dbUser.Hash = user.Hash;
             _db.SaveChanges();
             return true;
         }

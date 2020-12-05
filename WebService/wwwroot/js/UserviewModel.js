@@ -9,6 +9,8 @@
     let age = ko.observable();
     let username = ko.observable();
     let language = ko.observable();
+    let password = ko.observable();
+    let hash = ko.observable();
      
     let deleteUser = url => fetch("api/users/" + userId(), { method: "DELETE" });
      
@@ -17,7 +19,7 @@
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
         fetch("api/users", {
-            method: "POST", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language() }), headers
+            method: "POST", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language(), password: password(), hash: hash() }), headers
         })
             .then(response => response.json());
     }
@@ -27,7 +29,7 @@
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
         fetch("api/users/" + userId(), {
-            method: "PUT", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language() }), headers
+            method: "PUT", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language(), password:password(),hash:hash() }), headers
         })
             .then(response => response.json())
             ;
@@ -52,6 +54,6 @@
         age, language, username, name,
         
         names, userId ,getUsers,
-        deleteUser, createUsers,updateUsers
+        deleteUser, createUsers,updateUsers,password,hash
     };
 });
