@@ -4,8 +4,7 @@
 
     this.mysearch = ko.observableArray(
         [{ searchInput: "Search", dateTime: "" }]);
-    // something let kig på Henriks kode, først lave let search = ko.observable() så i createsearch skrive .then (function(data) search(data)
-
+ 
     this.resultSearch = ko.observableArray(
         [{ search: "Search results will be shown here" }]);
  
@@ -42,7 +41,6 @@
                 
             });
         
-                ;
         }
      
     
