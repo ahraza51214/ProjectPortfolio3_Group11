@@ -22,11 +22,10 @@ namespace DataServiceLib.DataService
 
         public void CreateUser(Users user)
         {
-            var maxId = _db.Users.Max(x => x.UserId);
-            user.UserId = maxId + 1;
             _db.Users.Add(user);
             _db.SaveChanges();
         }
+        
 
         public bool UpdateUser(int userId, Users user)
         {
