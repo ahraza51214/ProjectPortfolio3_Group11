@@ -29,7 +29,6 @@
 
             let headers = new Headers();
         headers.append("Content-Type", "application/json");
-       // fetch("api/search/" + userId() + "/" + SearchInput() + "?page=1&pageSize=10",
         fetch("api/search/" + userId()+"?page="+page()+"&pageSize="+pageSize(), {
             method: "POST", body: JSON.stringify({ userid: +userId(), searchInput: SearchInput() }) , headers
             })

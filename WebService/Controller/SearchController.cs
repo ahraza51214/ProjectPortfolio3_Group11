@@ -54,8 +54,7 @@ namespace ProjectPortfolio2_Group11.Controller
                 return Ok(search);
         } // comment the above HTTPGet method for enabling authorization
 
-
-        //[HttpPost("{userId}/{searchInput}", Name = nameof(AddToSearchHistory))]
+ 
 
         [HttpPost("{userId}", Name = nameof(AddToSearchHistory))]
         public IActionResult AddToSearchHistory(int page, int pageSize, SearchHistoryDto searchDto)

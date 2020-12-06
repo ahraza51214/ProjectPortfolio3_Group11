@@ -16,25 +16,16 @@ namespace DataServiceLib.DataService
         {
             _db = new Raw11Context(connStr);
         }
-        
-        public IList<UserTitleRate> GetRatingList(int userId)
+
+      
+
+        public IList<UserTitleRate> GetRating( int userId)
         {
-            return _db.UserTitleRates.ToList();
+            return _db.UserTitleRates.Where(x => x.UserId == userId).ToList();
         }
-        
-        public UserTitleRate GetRating(int userId, string tConst)
-        {
-            return _db.UserTitleRates.FirstOrDefault(x => x.UserId == userId
-                                                         && x.TConst == tConst); 
-        }
-       
+         
         public IList<TitleRateDto> CreateRating(UserTitleRate userTitleRate)
         {
-
-        if (userTitleRate.TitleIndividRating > 10)
-    {
-        throw new System.ArgumentException("Rating cannot be above 10");
-    }
           
             var queery = _db.RatingTable.FromSqlInterpolated($"select * from rate({userTitleRate.UserId},{userTitleRate.TConst},{userTitleRate.TitleIndividRating})");
           

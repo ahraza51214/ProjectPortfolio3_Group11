@@ -6,8 +6,8 @@ namespace DataServiceLib.IDataService
 {
     public interface IRatingDataService
     {
-        IList<UserTitleRate> GetRatingList(int UserId);
-        UserTitleRate GetRating(int userId, string tConst);
+        IList<UserTitleRate> GetRating(int userId);
+    
         IList<TitleRateDto> CreateRating(UserTitleRate userTitleRate);
          
     }

@@ -22,7 +22,7 @@ namespace ProjectPortfolio2_Group11.Controller
             _dataServiceFacade = dataServiceFacade;
             _mapper = mapper;
         }
-        
+       /* 
         [Authorization]
         [HttpGet]
         public IActionResult GetRatingList()
@@ -37,25 +37,30 @@ namespace ProjectPortfolio2_Group11.Controller
             {
                 return Unauthorized();
             }
-        }
-
-        [HttpGet("{userId}/{tConst}")]
-        public IActionResult GetRating(int userId, string tConst)
+        } */
+       
+        [HttpGet("{userId}")]
+        public IActionResult GetRating(int userId)
         {
-            var userTitleRate = _dataServiceFacade.RatingDs.GetRating(userId, tConst);
-            if (userTitleRate == null)
+            var userTitleRate = _dataServiceFacade.RatingDs.GetRating(userId);
+            if (userTitleRate.Count<=0  )
             {
                 var response = " rating not found for this user";
                 return NotFound(response);
             }
-            return Ok(_mapper.Map<UserTitleRateDto>(userTitleRate));
+            return Ok(userTitleRate);
         }
         
         [HttpPost]
         public IActionResult CreateRating(UserTitleRateForCreationDto userTitleRateForCreationDto)
         {
             var userTitleRate = _mapper.Map<UserTitleRate>(userTitleRateForCreationDto);
-           
+
+            if (userTitleRate.TitleIndividRating > 10 || userTitleRate.TitleIndividRating <= 0)
+            {
+               return BadRequest("invalid rating");
+            }
+
             return Ok(_dataServiceFacade.RatingDs.CreateRating(userTitleRate));
         }
 
