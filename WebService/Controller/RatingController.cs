@@ -43,9 +43,9 @@ namespace ProjectPortfolio2_Group11.Controller
         public IActionResult GetRating(int userId)
         {
             var userTitleRate = _dataServiceFacade.RatingDs.GetRating(userId);
-            if (userTitleRate.Count==0  ) // JSON
+            if (userTitleRate.Count==0  ) // JSON is returned
             {
-                var response = " rating not found for this user";
+                var response = " Rating not found";
                 return NotFound(response);
             }
             return Ok(userTitleRate);

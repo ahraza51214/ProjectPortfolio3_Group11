@@ -74,7 +74,7 @@ namespace ProjectPortfolio2_Group11.Controller
             {
                 return NotFound(response);
             }
-            response = " user deleted";
+            response = " user deleted succesfully";
             return CreatedAtRoute(null, userId + response);
         }
         

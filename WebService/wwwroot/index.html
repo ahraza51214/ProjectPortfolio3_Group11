@@ -14,6 +14,8 @@
         <button data-bind="click:  getUsers">GetUsers</button>
         <button data-bind="click: deleteUser">deleteUsers</button>
 
+        <div data-bind="text: responseMessage  "> </div>
+
         <input data-bind="value: userId " required>
 
         <ul data-bind="foreach: names">
@@ -55,7 +57,7 @@
         <button data-bind="click: GetBookmarks">getBookmarks</button>
         <button data-bind="click: DeleteBookmark">deleteBookmark</button>
 
-
+   
         <ul data-bind="foreach: bookmarks">
             <li>
                 <span data-bind="text: nconst + ' ' + userId  "></span>
@@ -94,14 +96,20 @@
             <input data-bind="value: page" required>
             Result Size
             <input data-bind="value: pageSize" required>
+
+
         </h4>
 
         <button data-bind="click: createSearch">Search</button>
 
+        <button data-bind="click: prev">previous</button>
+
+        <button data-bind="click: next">next</button>
+
         <ul data-bind="foreach:  resultSearch">
             <li>
-                <span data-bind="text:   JSON.stringify(search)  "></span>
-           
+                <span data-bind="text: JSON.stringify(search)  "></span>
+
 
             </li>
         </ul>

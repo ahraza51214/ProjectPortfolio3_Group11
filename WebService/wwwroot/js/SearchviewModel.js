@@ -1,6 +1,5 @@
 ﻿define(['knockout'], function (ko) {
-    //private part
-
+    
 
     this.mysearch = ko.observableArray(
         [{ searchInput: "Search", dateTime: "" }]);
@@ -12,8 +11,23 @@
     let SearchInput = ko.observable();
 
     let userId = ko.observable();
-    let page = ko.observable();
-    let pageSize = ko.observable();
+    let page = ko.observable(0);
+    let pageSize = ko.observable(50);
+ 
+
+    next= function () {
+        page(page() + 1);
+    }
+
+    prev = function () {
+        if (page() <1) {
+            throw new Error("Page cannot be negative");
+        }
+        page(page() - 1);
+    }
+
+   
+
     let getSearch = function () {
         fetch("api/search/"+userId())
 
@@ -42,13 +56,11 @@
         
         }
      
-    
-    //public part
-
+     
     return {
         SearchInput,createSearch,getSearch,
         
-        mysearch, userId, page, pageSize
+        mysearch, userId, page, pageSize,next,prev
        
     };
 });
