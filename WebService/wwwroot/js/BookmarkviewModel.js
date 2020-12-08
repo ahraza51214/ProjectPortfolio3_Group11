@@ -9,7 +9,7 @@
     let responseMessage = ko.observable();
 
 
-    let deleteBookmark = url => fetch("api/bookmark/" + userId(), { method: "DELETE" });
+    let deleteBookmark = url => fetch("api/bookmark/" + userId()+"/"+nconst(), { method: "DELETE" });
 
 
     let createBookmark = function () {

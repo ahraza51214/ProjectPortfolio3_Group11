@@ -69,7 +69,7 @@ namespace ProjectPortfolio2_Group11.Controller
         }
 
 
-        [HttpDelete("{userId}")]
+        [HttpDelete("{userId}/{nConst}")]
          
         public IActionResult DeleteBookmark(int userId, string nConst)
         {
