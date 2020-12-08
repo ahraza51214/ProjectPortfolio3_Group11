@@ -57,6 +57,8 @@
         <button data-bind="click: getBookmarks">getBookmarks</button>
         <button data-bind="click: deleteBookmark">deleteBookmark</button>
 
+        <div data-bind="text: responseMessage  "> </div>
+
 
         <ul data-bind="foreach: bookmarks">
             <li>
@@ -68,7 +70,7 @@
 
 
         UserId <input data-bind="value: userId " required>
-       Nconst <input data-bind="value: nconst" required>
+        Nconst <input data-bind="value: nconst" required>
 
         <div>
             <h1>Search</h1>
