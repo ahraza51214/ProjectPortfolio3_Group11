@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj": {}
+    "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/WebServiceTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
+    "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj",
+        "projectUniqueName": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj",
         "projectName": "DataServiceLib",
-        "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj",
-        "packagesPath": "C:\\Users\\bob-w\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\obj\\",
+        "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj",
+        "packagesPath": "/Users/Lenuska/.nuget/packages/",
+        "outputPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bob-w\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Lenuska/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,38 +60,103 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj": {
+    "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
-        "projectName": "WebServiceTests",
-        "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
-        "packagesPath": "C:\\Users\\bob-w\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\obj\\",
+        "projectUniqueName": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj",
+        "projectName": "WebService",
+        "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj",
+        "packagesPath": "/Users/Lenuska/.nuget/packages/",
+        "outputPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bob-w\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Lenuska/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
-                "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj"
+              "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj": {
+                "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/WebServiceTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/WebServiceTests.csproj",
+        "projectName": "WebServiceTests",
+        "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/WebServiceTests.csproj",
+        "packagesPath": "/Users/Lenuska/.nuget/packages/",
+        "outputPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Lenuska/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj": {
+                "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj"
               },
-              "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj": {
-                "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj"
+              "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj": {
+                "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj"
               }
             }
           }
@@ -143,83 +206,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj",
-        "projectName": "WebService",
-        "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj",
-        "packagesPath": "C:\\Users\\bob-w\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\bob-w\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
-                "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.1.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[3.1.4, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }

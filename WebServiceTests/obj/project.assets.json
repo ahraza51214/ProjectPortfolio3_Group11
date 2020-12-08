@@ -7416,36 +7416,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bob-w\\.nuget\\packages\\": {}
+    "/Users/Lenuska/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
+      "projectUniqueName": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/WebServiceTests.csproj",
       "projectName": "WebServiceTests",
-      "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
-      "packagesPath": "C:\\Users\\bob-w\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebServiceTests\\obj\\",
+      "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/WebServiceTests.csproj",
+      "packagesPath": "/Users/Lenuska/.nuget/packages/",
+      "outputPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bob-w\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Lenuska/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
-              "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj"
+            "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj": {
+              "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/DataServiceLib/DataServiceLib.csproj"
             },
-            "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj": {
-              "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj"
+            "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj": {
+              "projectPath": "/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/WebService.csproj"
             }
           }
         }
@@ -7495,14 +7493,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{A4142D81-FE78-4121-9B26-62BE55865485}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/wwwroot/js/BookmarkviewModel.js">
+    <Files>
+      <File FileName="WebService/Controller/BookmarkController.cs" Line="46" Column="46" />
+      <File FileName="WebService/wwwroot/js/BookmarkviewModel.js" Line="18" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjectPortfolio3_Group11" expanded="True">
+            <Node name="WebService" expanded="True">
+              <Node name="Authentication" expanded="True" />
+              <Node name="Controller" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True">
+                  <Node name="BookmarkviewModel.js" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

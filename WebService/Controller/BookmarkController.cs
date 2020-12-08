@@ -39,6 +39,8 @@ namespace ProjectPortfolio2_Group11.Controller
             }
         } */
 
+        //Lenka test
+
         [HttpGet("{userId}")]
         public IActionResult GetBookmark(int userId)
         {
