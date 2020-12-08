@@ -19,15 +19,15 @@ namespace DataServiceLib.DataService
             return _db.BookmarkPerson.ToList();
         }
 
-        public BookmarkPerson GetBookMark(int userId, string nConst)
+        public BookmarkPerson GetBookMark(int userId)
         {
             return _db.BookmarkPerson.FirstOrDefault(x => x.UserId==userId 
-                                                          && x.NConst == nConst);
+                                                          );
         }
 
         public bool CreateBookmark(BookmarkPerson bookmarkPerson)
         {
-            var dbBook = GetBookMark(bookmarkPerson.UserId, bookmarkPerson.NConst);
+            var dbBook = GetBookMark(bookmarkPerson.UserId);
             if (dbBook == null)
             {
                 _db.Add(bookmarkPerson);
@@ -37,9 +37,9 @@ namespace DataServiceLib.DataService
             return false;
         }
         
-        public bool DeleteBookmark(int userId, string nConst)
+        public bool DeleteBookmark(int userId)
         {
-            var dbBook = GetBookMark(userId,nConst);
+            var dbBook = GetBookMark(userId);
             if (dbBook == null)
             {
                 return false;

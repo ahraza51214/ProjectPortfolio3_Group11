@@ -6,8 +6,8 @@ namespace DataServiceLib.IDataService
     public interface IBookmarkingDataService
     {
         IList<BookmarkPerson> GetBookmarks(int userId);
-        BookmarkPerson GetBookMark(int userId,string nConst);
+        BookmarkPerson GetBookMark(int userId);
         bool CreateBookmark(BookmarkPerson bookmarkPerson);
-        bool DeleteBookmark(int userId,string nConst);
+        bool DeleteBookmark(int userId);
     }
 }

@@ -1,59 +1,62 @@
 ﻿define(['knockout'], function (ko) {
     //private part
 
-    let bookmarks = ko.observableArray(
-        [{ nconst: "" , userId: "" }]);
+    this.bookmarks = ko.observableArray(
+        [{ nConst: "", userId: "" }]);
 
     let nconst = ko.observable();
-    let userid = ko.observable('');
-   
+    let userId = ko.observable();
 
-let DeleteBookmark = url => fetch("api/bookmarkpersons/" + userid(), { method: "DELETE" });
 
-let createBookmark = function (bookmarkpersons, callback) {
+
+
+
+    let deleteBookmark = url => fetch("api/bookmark/" + userId() ,{ method: "DELETE" });
+
+
+
+
+
+
+    let createBookmark = function () {
 
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
-        fetch("api/bookmarkpersons", {
-        method: "POST", body: JSON.stringify({ nconst: +nconst() }), headers
+        fetch("api/bookmark", {
+            method: "POST", body: JSON.stringify({ nConst: nconst(), userId: +userId() }), headers
         })
             .then(response => response.json())
-            .then(data => callback(data))
-            ;
+
+
+
     }
 
 
-    let prevButtib = function () {
-
-        console.log("ddd");
-
-    }
-
- 
-
- let GetBookmarks = function (bookmarkpersons, callback) {
-     fetch("api/bookmarkpersons/" + userid())
+        let getBookmarks = function () {
+            fetch("api/bookmark/" + userId())
 
 
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                bookmarks(data);
-            });
-    }
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    bookmarks(data);
+
+
+                });
+        }
+
+    
 
 
 
 
+return {
+    nconst, userId,
 
-    //public part
+    bookmarks, getBookmarks,
+        deleteBookmark, createBookmark
 
 
-    return {
-        nconst, userid,
-
-        bookmarks, GetBookmarks, prevButtib,
-        DeleteBookmark, createBookmark
-    };
-});
+        };
+    });

@@ -104,7 +104,6 @@ C:\Users\bob-w\source\repos\ProjectPortfolio2_Group11\WebService\bin\Debug\netco
 C:\Users\bob-w\source\repos\ProjectPortfolio2_Group11\WebService\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\bob-w\source\repos\ProjectPortfolio2_Group11\WebService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\bob-w\source\repos\ProjectPortfolio2_Group11\WebService\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\WebService.exe
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\WebService.deps.json
@@ -158,4 +157,5 @@ C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\obj\Debug\netco
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\obj\Debug\netcoreapp3.1\WebService.genruntimeconfig.cache
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettingsRaw11.json
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettingso.Development.json
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebService\bin\Debug\netcoreapp3.1\appsettingso.json
