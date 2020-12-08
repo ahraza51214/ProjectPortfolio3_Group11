@@ -1,4 +1,4 @@
-/*using AutoMapper;
+using AutoMapper;
 using DataServiceLib;
 using DataServiceLib.DBObjects;
 using DataServiceLib.IDataService;
@@ -51,4 +51,4 @@ namespace WebServiceTests
             response.Should().BeOfType<NotFoundResult>();
         }
     }
-} */
+} 
