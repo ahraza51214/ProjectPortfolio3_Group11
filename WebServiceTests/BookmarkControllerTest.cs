@@ -1,4 +1,4 @@
-using AutoMapper;
+/*using AutoMapper;
 using DataServiceLib;
 using DataServiceLib.DBObjects;
 using DataServiceLib.IDataService;
@@ -28,14 +28,15 @@ namespace WebServiceTests
         [Fact]
         public void GetBookmartkWithValidIdSouldReturnOk()
         {
-            _dataServiceFacadeMock.Setup(x => x.BookmarkingDs.GetBookMark(1, "nm0000015")).Returns(new BookmarkPerson ());
-            
+            _dataServiceFacadeMock.Setup(x => x.BookmarkingDs.GetBookMark(1, "nm0000034" )).Returns(new BookmarkPerson ());
+
+
             _mapperMock.Setup(x => x.Map<BookmarkPersonDto>(It.IsAny<BookmarkPerson>())).Returns(new BookmarkPersonDto());
             
             var ctrl = new BookmarkController(_dataServiceFacadeMock.Object, _mapperMock.Object);
             ctrl.Url = _urlMock.Object;
             
-            var response = ctrl.GetBookmark(1, "nm0000015");
+            var response = ctrl.GetBookmarks(1);
             response.Should().BeOfType<OkObjectResult>();
         }
 
@@ -45,9 +46,9 @@ namespace WebServiceTests
         {
             var ctrl = new BookmarkController(_dataServiceFacadeMock.Object, null);
 
-            var response = ctrl.GetBookmark(1, "nm0000015");
+            var response = ctrl.GetBookmarks(1);
 
             response.Should().BeOfType<NotFoundResult>();
         }
     }
-}
+} */

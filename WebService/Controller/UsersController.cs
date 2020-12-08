@@ -37,7 +37,7 @@ namespace ProjectPortfolio2_Group11.Controller
         public IActionResult GetUser(int userId)
         {
             var user = _dataServiceFacade.UsersDs.GetUser(userId);
-            Task.Delay(2000);
+            
             if (user == null)
             {
                 return NotFound("user not found");

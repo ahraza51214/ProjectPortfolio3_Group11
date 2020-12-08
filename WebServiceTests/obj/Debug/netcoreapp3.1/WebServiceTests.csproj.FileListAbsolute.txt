@@ -259,3 +259,9 @@ C:\Users\aliha\Downloads\Testing1-Working-master\Testing1-Working-master\WebServ
 C:\Users\aliha\Downloads\Testing1-Working-master\Testing1-Working-master\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.dll
 C:\Users\aliha\Downloads\Testing1-Working-master\Testing1-Working-master\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.pdb
 C:\Users\aliha\Downloads\Testing1-Working-master\Testing1-Working-master\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.genruntimeconfig.cache
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.csprojAssemblyReference.cache
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.AssemblyInfoInputs.cache
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.AssemblyInfo.cs
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.csproj.CoreCompileInputs.cache
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.dll
+C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\WebServiceTests\obj\Debug\netcoreapp3.1\WebServiceTests.pdb

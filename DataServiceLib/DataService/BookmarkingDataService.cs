@@ -8,7 +8,7 @@ namespace DataServiceLib.DataService
     public class BookmarkingDataService : IBookmarkingDataService
     {
         private readonly Raw11Context _db;
-        
+
         public BookmarkingDataService(string connStr)
         {
             _db = new Raw11Context(connStr);
@@ -16,18 +16,19 @@ namespace DataServiceLib.DataService
 
         public IList<BookmarkPerson> GetBookmarks(int userId)
         {
-            return _db.BookmarkPerson.ToList();
+            return _db.BookmarkPerson.Where(x => x.UserId == userId).ToList();
+
         }
 
-        public BookmarkPerson GetBookMark(int userId)
+        public BookmarkPerson GetBookMark(int userId, string nConst)
         {
-            return _db.BookmarkPerson.FirstOrDefault(x => x.UserId==userId 
-                                                          );
+            return _db.BookmarkPerson.FirstOrDefault(x => x.UserId == userId
+                                                          && x.NConst == nConst);
         }
 
         public bool CreateBookmark(BookmarkPerson bookmarkPerson)
         {
-            var dbBook = GetBookMark(bookmarkPerson.UserId);
+            var dbBook = GetBookMark(bookmarkPerson.UserId, bookmarkPerson.NConst);
             if (dbBook == null)
             {
                 _db.Add(bookmarkPerson);
@@ -36,10 +37,10 @@ namespace DataServiceLib.DataService
             }
             return false;
         }
-        
-        public bool DeleteBookmark(int userId)
+
+        public bool DeleteBookmark(int userId, string nConst)
         {
-            var dbBook = GetBookMark(userId);
+            var dbBook = GetBookMark(userId, nConst);
             if (dbBook == null)
             {
                 return false;

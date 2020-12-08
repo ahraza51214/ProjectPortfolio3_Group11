@@ -39,22 +39,27 @@ namespace ProjectPortfolio2_Group11.Controller
             }
         } */
 
-        [HttpGet("{userId}")]
-        public IActionResult GetBookmark(int userId)
-        {
+        [HttpGet("{userId}")] // to get every bookmark from userId
+        public IActionResult GetBookmarks(int userId)
+        { 
+
             var response = " bookmark not found";
-            var bookmark = _dataServiceFacade.BookmarkingDs.GetBookMark(userId);
-            if (bookmark == null)
+            var bookmark = _dataServiceFacade.BookmarkingDs.GetBookmarks(userId);
+               if (bookmark.Count==0  ) // JSON is returned, elements number
+         
             {
                 return NotFound(response);
             }
-            return Ok(_mapper.Map<BookmarkPersonDto>(bookmark));
+            return Ok(bookmark);
         }
+
+   
+
 
         [HttpPost]
         public IActionResult CreateBookmark(BookmarkPersonForCreationDto bookmarkPersonForCreationDtoDto)
         {
-            var response = "This bookmark already exists";
+            var response = " This bookmark already exists for this user";
             var bookmark = _mapper.Map<BookmarkPerson>(bookmarkPersonForCreationDtoDto);
             if (!_dataServiceFacade.BookmarkingDs.CreateBookmark(bookmark))
             {
@@ -62,12 +67,14 @@ namespace ProjectPortfolio2_Group11.Controller
             }
             return Created("", bookmark);
         }
-        
+
+
         [HttpDelete("{userId}")]
-        public IActionResult DeleteBookmark(int userId)
+         
+        public IActionResult DeleteBookmark(int userId, string nConst)
         {
             var response = " bookmark not found";
-            if (!_dataServiceFacade.BookmarkingDs.DeleteBookmark(userId))
+            if (!_dataServiceFacade.BookmarkingDs.DeleteBookmark(userId, nConst))
             {
                 return NotFound(response);
             }
