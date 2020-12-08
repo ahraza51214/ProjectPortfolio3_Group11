@@ -60,7 +60,8 @@ namespace ProjectPortfolio2_Group11.Controller
         public IActionResult AddToSearchHistory(int page, int pageSize, SearchHistoryDto searchDto)
         {
             pageSize = CheckPageSize(pageSize);
-            var search = _dataServiceFacade.SearchDs.AddToSearchHistory(page, pageSize, searchDto.UserId, searchDto.SearchInput);
+            var search = _dataServiceFacade.SearchDs.AddToSearchHistory(page, pageSize, searchDto.UserId, searchDto.SearchInput /*,searchDto.PrimaryTitle, searchDto.Characters, searchDto.PrimaryName */);
+          //  var search2 = _dataServiceFacade.SearchDs.AddToSearchHistory(page, pageSize, searchDto.UserId, searchDto.SearchInput ,searchDto.PrimaryTitle, searchDto.Characters, searchDto.PrimaryName );
             var count = _dataServiceFacade.SearchDs.NumberOfElements(searchDto.UserId, searchDto.SearchInput);
             var navigationUrls = CreatePagingNavigation(page, pageSize, count);
             var result = new
@@ -69,11 +70,18 @@ namespace ProjectPortfolio2_Group11.Controller
                 navigationUrls.next,
                 navigationUrls.current,
                 count,
-                search
+                search,//search2
+               
             };
             return Ok(result);
         }
-        
+
+
+         
+
+
+
+
         private int CheckPageSize(int pageSize)
         {
             return pageSize > MaxPageSize ? MaxPageSize : pageSize;

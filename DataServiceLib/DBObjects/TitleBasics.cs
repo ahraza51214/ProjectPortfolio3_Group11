@@ -6,7 +6,7 @@ namespace DataServiceLib.DBObjects
     public class TitleBasics
     {
 
-        //  [NotMapped]
+       
         public string PrimaryTitle { get; set; }
         public string TConst { get; set; }
         public string TitleType { get; set; }

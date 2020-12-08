@@ -11,8 +11,13 @@
     let language = ko.observable();
     let password = ko.observable();
     let salt = ko.observable();
-    let responseMessage = ko.observable("Response");
+    let responseMessage = ko.observable();
  
+    let UserState = ko.observable(false);
+
+    let Userbool = () => UserState(true);
+    let CancelState = () => UserState(false);
+    
 
     let deleteUser = url => fetch("api/users/" + userId(), { method: "DELETE" });
      
@@ -50,16 +55,24 @@
             .then(function (response)
             {
                
-                if (response.status === 404) {
-                    responseMessage("Invalid userId! Please type a different userId!");
+                if (response.status === 404 || response.status === 400) {
+                    responseMessage("Invalid userId! Please type a valid userId!");
+                 
                     throw new Error(response.status + " User Not found "); }
+                if (response.status === 200) 
+                {   
+                 
+                    responseMessage("User retrieved succesfully!");
+                }
              
+
                 return response.json();
-            })
+            }
+               
+            )
             .then(function (data) {
                 names(data);
 
-                responseMessage("Task completed succesfully!");
             });
 
    
@@ -69,6 +82,6 @@
         age, language, username, name,
         
         names, userId ,getUsers,
-        deleteUser, createUsers, updateUsers, password, salt,responseMessage
+        deleteUser, createUsers, updateUsers, password, salt, responseMessage, Userbool, CancelState 
     };
 });

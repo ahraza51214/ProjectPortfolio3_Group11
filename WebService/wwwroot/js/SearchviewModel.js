@@ -2,7 +2,7 @@
     
 
     this.mysearch = ko.observableArray(
-        [{ searchInput: "Search", dateTime: "" }]);
+        [{ storedInput: "Search", dateTime: "" }]);
  
     this.resultSearch = ko.observableArray(
         [{ search: "Search results will be shown here" }]);
@@ -10,7 +10,7 @@
 
     let SearchInput = ko.observable();
 
-    let userId = ko.observable();
+    let userId = ko.observable(1);
     let page = ko.observable(0);
     let pageSize = ko.observable(50);
  
@@ -25,8 +25,6 @@
         }
         page(page() - 1);
     }
-
-   
 
     let getSearch = function () {
         fetch("api/search/"+userId())

@@ -23,8 +23,8 @@ namespace DataServiceLib
         public DbSet<SearchHistory> SearchHistory { get; set; }
         public DbSet<TitleAkas> TitleAkas { get; set; }
         public DbSet<TitleRateDto> RatingTable { get; set; }
-        public virtual DbSet<TitleBasics> TitleBasics { get; set; }
-        public virtual DbSet<TitleBasicsDto> TitleBasicsDTO { get; set; }
+        public  DbSet<TitleBasics> TitleBasics { get; set; }
+        public  DbSet<SearchResults> SearchResults { get; set; }
         public DbSet<TitlePrincipals> TitlePrincipals { get; set; }
     
         public DbSet<Users> Users { get; set; }
@@ -75,7 +75,7 @@ namespace DataServiceLib
             
             modelBuilder.Entity<SearchHistory>().ToTable("search_history");
             modelBuilder.Entity<SearchHistory>().Property(x => x.UserId).HasColumnName("userid");
-            modelBuilder.Entity<SearchHistory>().Property(x => x.SearchInput).HasColumnName("search_input");
+            modelBuilder.Entity<SearchHistory>().Property(x => x.StoredInput).HasColumnName("stored_input");
             modelBuilder.Entity<SearchHistory>().Property(x => x.DateTime).HasColumnName("search_date");
             modelBuilder.Entity<SearchHistory>().HasNoKey();
 
@@ -167,8 +167,9 @@ namespace DataServiceLib
             modelBuilder.Entity<TitleRateDto>().HasNoKey();
                     
             //TitleBasicsDto used for the String_Search() function
-            modelBuilder.Entity<TitleBasicsDto>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
-            modelBuilder.Entity<TitleBasicsDto>().HasNoKey();
+            modelBuilder.Entity<SearchResults>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
+            modelBuilder.Entity<SearchResults>().Property(x => x.Tconst).HasColumnName("tconst");
+            modelBuilder.Entity<SearchResults>().HasNoKey();
         }
     }
 }

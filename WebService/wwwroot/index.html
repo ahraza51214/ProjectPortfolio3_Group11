@@ -82,7 +82,7 @@
 
         <ul data-bind="foreach:  mysearch">
             <li>
-                <span data-bind="text:   'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime "></span>
+                <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span>
 
             </li>
         </ul>
@@ -102,9 +102,8 @@
 
         <button data-bind="click: createSearch">Search</button>
 
-        <button data-bind="click: prev">previous</button>
-
         <button data-bind="click: next">next</button>
+        <button data-bind="click: prev">prev</button>
 
         <ul data-bind="foreach:  resultSearch">
             <li>
