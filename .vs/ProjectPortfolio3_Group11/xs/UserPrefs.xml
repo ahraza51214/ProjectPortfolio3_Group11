@@ -1,22 +1,17 @@
 ﻿<Properties StartupConfiguration="{A4142D81-FE78-4121-9B26-62BE55865485}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/wwwroot/js/BookmarkviewModel.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebServiceTests/BookmarkControllerTest.cs">
     <Files>
-      <File FileName="WebService/Controller/BookmarkController.cs" Line="46" Column="46" />
+      <File FileName="WebService/Controller/BookmarkController.cs" Line="42" Column="21" />
       <File FileName="WebService/wwwroot/js/BookmarkviewModel.js" Line="18" Column="1" />
+      <File FileName="WebService/wwwroot/js/main.js" Line="1" Column="1" />
+      <File FileName="WebServiceTests/BookmarkControllerTest.cs" Line="31" Column="63" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProjectPortfolio3_Group11" expanded="True">
-            <Node name="WebService" expanded="True">
-              <Node name="Authentication" expanded="True" />
-              <Node name="Controller" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="js" expanded="True">
-                  <Node name="BookmarkviewModel.js" selected="True" />
-                </Node>
-              </Node>
+            <Node name="WebServiceTests" expanded="True">
+              <Node name="BookmarkControllerTest.cs" selected="True" />
             </Node>
           </Node>
         </State>
