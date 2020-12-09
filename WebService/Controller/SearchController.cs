@@ -43,45 +43,49 @@ namespace ProjectPortfolio2_Group11.Controller
              }
          } */
 
+       
+
+       
+
         [HttpGet("{userId}")] // comment the below HTTPGet method for enabling authorization
         public IActionResult GetSearchHistory(int userId)
-        { 
-                var search = _dataServiceFacade.SearchDs.GetSearchHistory(userId, userId);
-                if (search == null)
-                {
-                    return NotFound();
-                }
-                return Ok(search);
+        {
+            var search = _dataServiceFacade.SearchDs.GetSearchHistory(userId);
+            if (search.Count == 0)
+            {
+                return NotFound("Search history not found");
+            }
+            return Ok(search);
         } // comment the above HTTPGet method for enabling authorization
 
- 
+
 
         [HttpPost("{userId}", Name = nameof(AddToSearchHistory))]
         public IActionResult AddToSearchHistory(int page, int pageSize, SearchHistoryDto searchDto)
         {
             pageSize = CheckPageSize(pageSize);
             var search = _dataServiceFacade.SearchDs.AddToSearchHistory(page, pageSize, searchDto.UserId, searchDto.SearchInput /*,searchDto.PrimaryTitle, searchDto.Characters, searchDto.PrimaryName */);
-          //  var search2 = _dataServiceFacade.SearchDs.AddToSearchHistory(page, pageSize, searchDto.UserId, searchDto.SearchInput ,searchDto.PrimaryTitle, searchDto.Characters, searchDto.PrimaryName );
+            //  var search2 = _dataServiceFacade.SearchDs.AddToSearchHistory(page, pageSize, searchDto.UserId, searchDto.SearchInput ,searchDto.PrimaryTitle, searchDto.Characters, searchDto.PrimaryName );
             var count = _dataServiceFacade.SearchDs.NumberOfElements(searchDto.UserId, searchDto.SearchInput);
             var navigationUrls = CreatePagingNavigation(page, pageSize, count);
             var result = new
-            { 
+            {
                 navigationUrls.prev,
                 navigationUrls.next,
                 navigationUrls.current,
                 count,
                 search,//search2
-               
+
             };
+            if (search.Count == 0)
+            {
+               return NotFound("Search found no matches");
+          
+            }
+
             return Ok(result);
         }
-
-
          
-
-
-
-
         private int CheckPageSize(int pageSize)
         {
             return pageSize > MaxPageSize ? MaxPageSize : pageSize;

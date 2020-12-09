@@ -18,11 +18,11 @@ namespace DataServiceLib.DataService
             _db = new Raw11Context(connStr);
         }
 
-        public IList<SearchHistory> GetSearchHistory(int UserId, int userId)
+        public IList<SearchHistory> GetSearchHistory( int userId)
         {
-            return _db.SearchHistory.Where(x => x.UserId == userId).ToList();
+            return _db.SearchHistory.Where(x => x.UserId == userId).ToList(); // Gets searchs, returns results as a list
         }
-
+  
         public IList<SearchResults> AddToSearchHistory(int page, int pageSize, int userId, string searchInput)
         {
             var queery = _db.SearchResults.FromSqlInterpolated($"select * from string_search({userId},{searchInput})");

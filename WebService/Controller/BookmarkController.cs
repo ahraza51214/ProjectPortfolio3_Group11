@@ -45,7 +45,7 @@ namespace ProjectPortfolio2_Group11.Controller
 
             var response = " bookmark not found";
             var bookmark = _dataServiceFacade.BookmarkingDs.GetBookmarks(userId);
-               if (bookmark.Count==0  ) // JSON is returned, elements number
+               if (bookmark.Count==0  ) // JSON is returned, counts JSON elements
          
             {
                 return NotFound(response);

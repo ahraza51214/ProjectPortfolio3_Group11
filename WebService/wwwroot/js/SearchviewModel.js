@@ -1,19 +1,19 @@
 ﻿define(['knockout'], function (ko) {
     
 
-    this.mysearch = ko.observableArray(
-        [{ storedInput: "Search", dateTime: "" }]);
+   let  mysearch = ko.observableArray(
+        [{ storedInput: "", dateTime: "" }]);
  
-    this.resultSearch = ko.observableArray(
-        [{ search: "Search results will be shown here" }]);
+    resultSearch = ko.observableArray(
+        [{ search:"PrimaryTitles",count:"" }]
+    );
  
-
     let SearchInput = ko.observable();
 
     let userId = ko.observable(1);
     let page = ko.observable(0);
     let pageSize = ko.observable(50);
- 
+    let responseMessage = ko.observable();
 
     next= function () {
         page(page() + 1);
@@ -30,11 +30,18 @@
         fetch("api/search/"+userId())
 
             .then(function (response) {
+
+                if (response.status === 404) {
+                    mysearch("");
+                  
+                }
                 return response.json();
             })
             .then(function (data) {
                 mysearch(data);
-            });
+              
+                } 
+            );
     }
      
     let createSearch = function () {
@@ -45,11 +52,24 @@
             method: "POST", body: JSON.stringify({ userid: +userId(), searchInput: SearchInput() }) , headers
             })
             .then(function (response) {
+
+
+                if (response.status === 404 ) {
+                    responseMessage(" No search matches found!");
+                    resultSearch("");
+                    throw new Error(response.status + " No search matches found ");
+                }
+ 
+                    responseMessage("");
+ 
+
                 return response.json();
             })
             .then(function (data ) {
-               resultSearch(data);
-                
+             
+                resultSearch(data);
+
+
             });
         
         }
@@ -58,7 +78,7 @@
     return {
         SearchInput,createSearch,getSearch,
         
-        mysearch, userId, page, pageSize,next,prev
+        mysearch, userId, page, pageSize, next, prev, responseMessage
        
     };
 });

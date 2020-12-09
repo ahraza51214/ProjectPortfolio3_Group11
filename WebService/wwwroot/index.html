@@ -18,7 +18,7 @@
 
         <input data-bind="value: userId " required>
 
-        <ul data-bind="foreach: names">
+        <ul data-bind="foreach: User">
             <li>
                 <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
 
@@ -79,7 +79,7 @@
     <div>
         <h1>Search</h1>
     </div>
-  
+
 
     <div data-bind="with:searchviewModel ">
 
@@ -110,9 +110,14 @@
 
         <button data-bind="click: next">next</button>
         <button data-bind="click: prev">prev</button>
-
+        <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
         <ul data-bind="foreach:  resultSearch">
             <li>
+                <div>
+                    <h3>
+                        Search results : <span data-bind="text: count   "></span>
+                    </h3>
+                </div>
                 <span data-bind="text: JSON.stringify(search)  "></span>
 
 

@@ -1,12 +1,12 @@
 ﻿define(['knockout'], function (ko) {
    
     
-    this.names = ko.observableArray(
+    let User = ko.observableArray(
         [{ language: "" , name:"" , username:"",age:"" }]);
    
     let userId = ko.observable();
-    let name = ko.observable('');
-    let age = ko.observable();
+    let name = ko.observable();
+    let age = ko.observable('');
     let username = ko.observable();
     let language = ko.observable();
     let password = ko.observable();
@@ -57,7 +57,7 @@
                
                 if (response.status === 404 || response.status === 400) {
                     responseMessage("Invalid userId! Please type a valid userId!");
-                 
+                    User("");
                     throw new Error(response.status + " User Not found "); }
                 if (response.status === 200) 
                 {   
@@ -71,7 +71,7 @@
                
             )
             .then(function (data) {
-                names(data);
+                User(data);
 
             });
 
@@ -81,7 +81,7 @@
     return {
         age, language, username, name,
         
-        names, userId ,getUsers,
+        User, userId ,getUsers,
         deleteUser, createUsers, updateUsers, password, salt, responseMessage, Userbool, CancelState 
     };
 });
