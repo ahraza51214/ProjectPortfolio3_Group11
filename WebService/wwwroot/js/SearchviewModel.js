@@ -10,7 +10,7 @@
  
     let SearchInput = ko.observable();
 
-    let userId = ko.observable(1);
+    let userId = ko.observable(0);
     let page = ko.observable(0);
     let pageSize = ko.observable(50);
     let responseMessage = ko.observable();
