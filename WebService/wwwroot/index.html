@@ -6,57 +6,57 @@
     <!-- this reference doesnt work <link href="css/style.css" rel="stylesheet" />, the one at line 4 does  -->
 </head>
 
-    <body>
-        <h1>Movie application</h1>
+<body>
+    <h1>Movie application</h1>
 
-        <h2>User profile</h2>
-      
- 
-
-        <div data-bind="with:userviewModel ">
-            <button data-bind="click:  getUsers">GetUsers</button>
-            <button data-bind="click: deleteUser">deleteUsers</button>
-
-            <div > </div>
-            <h4 data-bind="text: responseMessage  ">
-                </h4>
-                    <!--handles feedback to the users-->
-
-                    <input data-bind="value: userId " required>
-
-                    <ul data-bind="foreach: User">
-
-                        <!-- each User Objects will have these attributes shown after clicking getUsers-->
-                        <li>
-                            <h3>
-                                <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
-
-                            </h3>
-                        </li>
-                    </ul>
+    <h2>User profile</h2>
 
 
-                    <h4>
-                        Name
-                        <input data-bind="value: name" required>
 
-                        Age
-                        <input data-bind="value: age" required>
+    <div data-bind="with:userviewModel ">
+        <button data-bind="click:  getUsers">GetUsers</button>
+        <button data-bind="click: deleteUser">deleteUsers</button>
 
-                        Username
-                        <input data-bind="value: username" required>
+        <div> </div>
+        <h4 data-bind="text: responseMessage  ">
+        </h4>
+        <!--handles feedback to the users-->
 
-                        Language
-                        <input data-bind="value: language" required>
-                        Password
-                        <input data-bind="value: password" required>
-                        Salt
-                        <input data-bind="value: salt" required>
-                    </h4>
+        <input data-bind="value: userId " required>
 
-                    <button data-bind="click: createUsers">createUsers</button>
-                    <button data-bind="click: updateUsers">updateUsers</button>
-        </div>
+        <ul data-bind="foreach: User">
+
+            <!-- each User Objects will have these attributes shown after clicking getUsers-->
+            <li>
+                <h3>
+                    <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
+
+                </h3>
+            </li>
+        </ul>
+
+
+        <h4>
+            Name
+            <input data-bind="value: name" required>
+
+            Age
+            <input data-bind="value: age" required>
+
+            Username
+            <input data-bind="value: username" required>
+
+            Language
+            <input data-bind="value: language" required>
+            Password
+            <input data-bind="value: password" required>
+            Salt
+            <input data-bind="value: salt" required>
+        </h4>
+
+        <button data-bind="click: createUsers">createUsers</button>
+        <button data-bind="click: updateUsers">updateUsers</button>
+    </div>
 
     <div>
         <h1>Bookmark</h1>
@@ -74,17 +74,18 @@
             <li>
                 <h3>  <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span> </h3>
 
-</li>
+            </li>
         </ul>
         <button data-bind="click: createBookmark">createNewBookmark</button>
 
 
         <h4>
             UserId <input data-bind="value: userId " required>
-            Nconst <input data-bind="value: nconst" required>   </h4>
+            Nconst <input data-bind="value: nconst" required>
+        </h4>
 
 
-</div>
+    </div>
 
     <div>
         <h1>Search</h1>
@@ -102,7 +103,7 @@
             <li>
                 <h3>    <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span> </h3>
 
-</li>
+            </li>
         </ul>
 
 
@@ -122,28 +123,29 @@
 
         <button data-bind="click: next">next</button>
         <button data-bind="click: prev">prev</button>
-        <div> <h3 data-bind="text: responseMessage  ">  </h3></div>
-        <ul data-bind="foreach:  resultSearch">
-            <!--shows each Search Object and count value, for each resultSearch Observablearray that gets called-->
-            <li>
-                <div>
-                    <h3>
-                        Search results : <span data-bind="text: count   "></span>
-                    </h3>
-                </div>
-                <divc>
-                    <p2 data-bind="text: JSON.stringify(search)  ">        </p2>
-                </divc>
-                <!--converts the object to JSON-->
+        <div> <h3 data-bind="text: responseMessage  ">  </h3></div>         
+    <ul data-bind="foreach:  resultSearch">  
+    <!--shows each Search Object and count value, for each resultSearch Observablearray that gets called-->
+    <li>
+        <div>
+            <h3>
+                Search results : <span data-bind="text: count   "></span>
+            </h3>
+        </div>
+        <div>
+                <p2 data-bind="text: JSON.stringify(search)  ">      </p2> 
 
-            </li>
-        </ul>
-
+</div>
+        <!--converts the object to JSON-->
+    </li>
+ 
+</ul>
+ 
     </div>
-
+  
     <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
-    </body>
+</body>
 </html>
  
 
