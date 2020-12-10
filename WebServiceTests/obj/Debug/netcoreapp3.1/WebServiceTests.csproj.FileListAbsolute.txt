@@ -259,6 +259,7 @@ C:/Users/aliha/Downloads/Testing1-Working-master/Testing1-Working-master/WebServ
 C:/Users/aliha/Downloads/Testing1-Working-master/Testing1-Working-master/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.dll
 C:/Users/aliha/Downloads/Testing1-Working-master/Testing1-Working-master/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.pdb
 C:/Users/aliha/Downloads/Testing1-Working-master/Testing1-Working-master/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.genruntimeconfig.cache
+<<<<<<< Updated upstream
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csprojAssemblyReference.cache
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.AssemblyInfoInputs.cache
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.AssemblyInfo.cs
@@ -273,6 +274,22 @@ C:/Users/aliha/Downloads/Testing1-Working-master/Testing1-Working-master/WebServ
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/appsettingsLocal.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/libman.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+=======
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csprojAssemblyReference.cache
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.AssemblyInfoInputs.cache
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.AssemblyInfo.cs
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csproj.CoreCompileInputs.cache
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.dll
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.pdb
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/xunit.runner.utility.netcoreapp10.dll
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/appsettingsLocal.Development.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/appsettingsRaw11.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/libman.json
+>>>>>>> Stashed changes
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/WebServiceTests.deps.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/WebServiceTests.runtimeconfig.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/WebServiceTests.runtimeconfig.dev.json
@@ -397,5 +414,15 @@ C:/Users/aliha/Downloads/Testing1-Working-master/Testing1-Working-master/WebServ
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/WebService.dll
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/DataServiceLib.pdb
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/bin/Debug/netcoreapp3.1/WebService.pdb
+<<<<<<< Updated upstream
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csproj.CopyComplete
+=======
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csprojAssemblyReference.cache
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.AssemblyInfoInputs.cache
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.AssemblyInfo.cs
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csproj.CoreCompileInputs.cache
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.csproj.CopyComplete
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.dll
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.pdb
+>>>>>>> Stashed changes
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebServiceTests/obj/Debug/netcoreapp3.1/WebServiceTests.genruntimeconfig.cache

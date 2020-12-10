@@ -104,6 +104,7 @@ C:/Users/bob-w/source/repos/ProjectPortfolio2_Group11/WebService/bin/Debug/netco
 C:/Users/bob-w/source/repos/ProjectPortfolio2_Group11/WebService/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
 C:/Users/bob-w/source/repos/ProjectPortfolio2_Group11/WebService/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 C:/Users/bob-w/source/repos/ProjectPortfolio2_Group11/WebService/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+<<<<<<< Updated upstream
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.exe
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.deps.json
@@ -111,6 +112,14 @@ C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netco
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.runtimeconfig.dev.json
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.dll
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.pdb
+=======
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/appsettingsLocal.Development.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/appsettingsRaw11.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/libman.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.exe
+>>>>>>> Stashed changes
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/AutoMapper.dll
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -154,6 +163,7 @@ C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/obj/Debug/netco
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/obj/Debug/netcoreapp3.1/staticwebassets/WebService.StaticWebAssets.xml
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/obj/Debug/netcoreapp3.1/WebService.dll
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/obj/Debug/netcoreapp3.1/WebService.pdb
+<<<<<<< Updated upstream
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/obj/Debug/netcoreapp3.1/WebService.genruntimeconfig.cache
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/libman.json
 C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/appsettings.json
@@ -164,6 +174,17 @@ C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netco
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/appsettingsLocal.Development.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/appsettingsLocal.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/libman.json
+=======
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.deps.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.runtimeconfig.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.runtimeconfig.dev.json
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.dll
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netcoreapp3.1/WebService.pdb
+C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/obj/Debug/netcoreapp3.1/WebService.genruntimeconfig.cache
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/appsettingsLocal.Development.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/libman.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+>>>>>>> Stashed changes
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/WebService.deps.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/WebService.runtimeconfig.json
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/WebService.runtimeconfig.dev.json
@@ -213,3 +234,8 @@ C:/Users/bob-w/source/repos/ProjectPortfolio3_Group11/WebService/bin/Debug/netco
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/obj/Debug/netcoreapp3.1/WebService.dll
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/obj/Debug/netcoreapp3.1/WebService.pdb
 /Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/obj/Debug/netcoreapp3.1/WebService.genruntimeconfig.cache
+<<<<<<< Updated upstream
+=======
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/appsettingsLocal.json
+/Users/Lenuska/Documents/GitHub/NewPortoflio3/WebService/bin/Debug/netcoreapp3.1/appsettings.json
+>>>>>>> Stashed changes

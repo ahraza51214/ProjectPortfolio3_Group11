@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
     <title>index</title>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Movie application</h1>
+    <h1 style="color: blue;">Movie application &#9827;</h1>
 
     <h3>User profile</h3>
 
@@ -18,7 +19,7 @@
 
         <input data-bind="value: userId " required>
 
-        <ul data-bind="foreach: names">
+        <ul data-bind="foreach: User">
             <li>
                 <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
 
@@ -62,7 +63,7 @@
 
         <ul data-bind="foreach: bookmarks">
             <li>
-                <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span>
+                <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span>
 
             </li>
         </ul>
@@ -72,10 +73,14 @@
         UserId <input data-bind="value: userId " required>
         Nconst <input data-bind="value: nconst" required>
 
-        <div>
-            <h1>Search</h1>
-        </div>
+
+
     </div>
+
+    <div>
+        <h1>Search</h1>
+    </div>
+
 
     <div data-bind="with:searchviewModel ">
 
@@ -106,9 +111,14 @@
 
         <button data-bind="click: next">next</button>
         <button data-bind="click: prev">prev</button>
-
+        <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
         <ul data-bind="foreach:  resultSearch">
             <li>
+                <div>
+                    <h3>
+                        Search results : <span data-bind="text: count   "></span>
+                    </h3>
+                </div>
                 <span data-bind="text: JSON.stringify(search)  "></span>
 
 
@@ -123,8 +133,3 @@
 
 </body>
 </html>
-
-
-
-
-
