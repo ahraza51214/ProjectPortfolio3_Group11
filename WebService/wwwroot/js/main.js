@@ -8,9 +8,6 @@ require.config({
 });
 
 
-
-
-
 require(['knockout', 'BookmarkviewModel', 'UserviewModel', 'SearchviewModel'], function (ko, bookmarkviewModel, userviewModel, searchviewModel) {
     var viewmodel = {
         bookmarkviewModel, userviewModel,searchviewModel

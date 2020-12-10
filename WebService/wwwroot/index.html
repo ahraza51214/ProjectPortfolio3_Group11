@@ -1,51 +1,57 @@
-﻿<!DOCTYPE html>
+﻿ <!DOCTYPE html>
 <html>
 <head>
-    <title>index</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />       
+    <!--reference doesnt work, if the css inst located in the same folder as index for some reaons-->
+    <!-- this reference doesnt work <link href="css/style.css" rel="stylesheet" />, the one at line 4 does  -->
 </head>
-<body>
-    <h1>Movie application</h1>
 
-    <h3>User profile</h3>
+    <body>
+        <h1>Movie application</h1>
+
+        <h3>User profile</h3>
+      
+
+        <p style="color:green;">A green paragraph.</p>
+
+        <div data-bind="with:userviewModel ">
+            <button data-bind="click:  getUsers">GetUsers</button>
+            <button data-bind="click: deleteUser">deleteUsers</button>
+
+            <div data-bind="text: responseMessage  "> </div>
+            <!--handles feedback to the users-->
+
+    <input data-bind="value: userId " required>
+
+    <ul data-bind="foreach: User">
+        <!-- each User Objects will have these attributes shown after clicking getUsers-->
+        <li>
+            <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
+
+        </li>
+    </ul>
 
 
-    <div data-bind="with:userviewModel ">
-        <button data-bind="click:  getUsers">GetUsers</button>
-        <button data-bind="click: deleteUser">deleteUsers</button>
+    <h4>
+        Name
+        <input data-bind="value: name" required>
 
-        <div data-bind="text: responseMessage  "> </div>
+        Age
+        <input data-bind="value: age" required>
 
-        <input data-bind="value: userId " required>
+        Username
+        <input data-bind="value: username" required>
 
-        <ul data-bind="foreach: User">
-            <li>
-                <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
+        Language
+        <input data-bind="value: language" required>
+        Password
+        <input data-bind="value: password" required>
+        Salt
+        <input data-bind="value: salt" required>
+    </h4>
 
-            </li>
-        </ul>
-
-
-        <h4>
-            Name
-            <input data-bind="value: name" required>
-
-            Age
-            <input data-bind="value: age" required>
-
-            Username
-            <input data-bind="value: username" required>
-
-            Language
-            <input data-bind="value: language" required>
-            Password
-            <input data-bind="value: password" required>
-            Salt
-            <input data-bind="value: salt" required>
-        </h4>
-
-        <button data-bind="click: createUsers">createUsers</button>
-        <button data-bind="click: updateUsers">updateUsers</button>
+    <button data-bind="click: createUsers">createUsers</button>
+    <button data-bind="click: updateUsers">updateUsers</button>
     </div>
 
     <div>
@@ -73,7 +79,6 @@
         Nconst <input data-bind="value: nconst" required>
 
 
-
     </div>
 
     <div>
@@ -87,6 +92,8 @@
         Userid <input data-bind="value: userId" required>
 
         <ul data-bind="foreach:  mysearch">
+
+            <!--shows the search history of 1 user-->
             <li>
                 <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span>
 
@@ -112,6 +119,7 @@
         <button data-bind="click: prev">prev</button>
         <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
         <ul data-bind="foreach:  resultSearch">
+            <!--shows each Search Object and count value, for each resultSearch Observablearray that gets called-->
             <li>
                 <div>
                     <h3>
@@ -119,7 +127,7 @@
                     </h3>
                 </div>
                 <span data-bind="text: JSON.stringify(search)  "></span>
-
+                <!--converts the object to JSON-->
 
             </li>
         </ul>
@@ -128,11 +136,9 @@
 
     <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
-
-
-</body>
+    </body>
 </html>
-
+ 
 
 
 

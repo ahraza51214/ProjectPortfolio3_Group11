@@ -15,8 +15,8 @@
  
     let UserState = ko.observable(false);
 
-    let Userbool = () => UserState(true);
-    let CancelState = () => UserState(false);
+    /*let Userbool = () => UserState(true);
+    let CancelState = () => UserState(false); */
     
 
     let deleteUser = url => fetch("api/users/" + userId(), { method: "DELETE" });
@@ -82,6 +82,6 @@
         age, language, username, name,
         
         User, userId ,getUsers,
-        deleteUser, createUsers, updateUsers, password, salt, responseMessage, Userbool, CancelState 
+        deleteUser, createUsers, updateUsers, password, salt, responseMessage
     };
 });
