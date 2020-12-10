@@ -3,10 +3,38 @@
   
 }
 
-h1,h3 {
-    color: white;
+h1 {  
+    font-size: 32px;
+    color: darkred;
+}
+
+h2 {
+    font-size: 23px;
+    color: darkgrey;
+}
+
+
+h3 {
+    font-size: 18px;
+    color: darkgoldenrod;
+}
+
+h4 {
+    font-size: 20px;
+    color: darkgrey;
 }
 
 p { font-size: 17px;
     color: blue;
+}
+
+
+p2 {
+    font-size: 19px;
+    color: navajowhite;
+}
+
+divc {
+ 
+ 
 }

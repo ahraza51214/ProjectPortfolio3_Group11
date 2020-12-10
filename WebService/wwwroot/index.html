@@ -9,50 +9,54 @@
     <body>
         <h1>Movie application</h1>
 
-        <h3>User profile</h3>
+        <h2>User profile</h2>
       
-
-        <p style="color:green;">A green paragraph.</p>
+ 
 
         <div data-bind="with:userviewModel ">
             <button data-bind="click:  getUsers">GetUsers</button>
             <button data-bind="click: deleteUser">deleteUsers</button>
 
-            <div data-bind="text: responseMessage  "> </div>
-            <!--handles feedback to the users-->
+            <div > </div>
+            <h4 data-bind="text: responseMessage  ">
+                </h4>
+                    <!--handles feedback to the users-->
 
-    <input data-bind="value: userId " required>
+                    <input data-bind="value: userId " required>
 
-    <ul data-bind="foreach: User">
-        <!-- each User Objects will have these attributes shown after clicking getUsers-->
-        <li>
-            <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
+                    <ul data-bind="foreach: User">
 
-        </li>
-    </ul>
+                        <!-- each User Objects will have these attributes shown after clicking getUsers-->
+                        <li>
+                            <h3>
+                                <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
+
+                            </h3>
+                        </li>
+                    </ul>
 
 
-    <h4>
-        Name
-        <input data-bind="value: name" required>
+                    <h4>
+                        Name
+                        <input data-bind="value: name" required>
 
-        Age
-        <input data-bind="value: age" required>
+                        Age
+                        <input data-bind="value: age" required>
 
-        Username
-        <input data-bind="value: username" required>
+                        Username
+                        <input data-bind="value: username" required>
 
-        Language
-        <input data-bind="value: language" required>
-        Password
-        <input data-bind="value: password" required>
-        Salt
-        <input data-bind="value: salt" required>
-    </h4>
+                        Language
+                        <input data-bind="value: language" required>
+                        Password
+                        <input data-bind="value: password" required>
+                        Salt
+                        <input data-bind="value: salt" required>
+                    </h4>
 
-    <button data-bind="click: createUsers">createUsers</button>
-    <button data-bind="click: updateUsers">updateUsers</button>
-    </div>
+                    <button data-bind="click: createUsers">createUsers</button>
+                    <button data-bind="click: updateUsers">updateUsers</button>
+        </div>
 
     <div>
         <h1>Bookmark</h1>
@@ -68,18 +72,19 @@
 
         <ul data-bind="foreach: bookmarks">
             <li>
-                <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span>
+                <h3>  <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span> </h3>
 
-            </li>
+</li>
         </ul>
         <button data-bind="click: createBookmark">createNewBookmark</button>
 
 
-        UserId <input data-bind="value: userId " required>
-        Nconst <input data-bind="value: nconst" required>
+        <h4>
+            UserId <input data-bind="value: userId " required>
+            Nconst <input data-bind="value: nconst" required>   </h4>
 
 
-    </div>
+</div>
 
     <div>
         <h1>Search</h1>
@@ -89,15 +94,15 @@
     <div data-bind="with:searchviewModel ">
 
         <button data-bind="click: getSearch">GetSearch</button>
-        Userid <input data-bind="value: userId" required>
+        <h4>  Userid <input data-bind="value: userId" required> </h4>
 
         <ul data-bind="foreach:  mysearch">
 
             <!--shows the search history of 1 user-->
             <li>
-                <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span>
+                <h3>    <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span> </h3>
 
-            </li>
+</li>
         </ul>
 
 
@@ -117,7 +122,7 @@
 
         <button data-bind="click: next">next</button>
         <button data-bind="click: prev">prev</button>
-        <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
+        <div> <h3 data-bind="text: responseMessage  ">  </h3></div>
         <ul data-bind="foreach:  resultSearch">
             <!--shows each Search Object and count value, for each resultSearch Observablearray that gets called-->
             <li>
@@ -126,7 +131,9 @@
                         Search results : <span data-bind="text: count   "></span>
                     </h3>
                 </div>
-                <span data-bind="text: JSON.stringify(search)  "></span>
+                <divc>
+                    <p2 data-bind="text: JSON.stringify(search)  ">        </p2>
+                </divc>
                 <!--converts the object to JSON-->
 
             </li>

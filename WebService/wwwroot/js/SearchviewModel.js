@@ -5,7 +5,7 @@
         [{ storedInput: "", dateTime: "" }]);
  
     resultSearch = ko.observableArray(
-        [{ search:"PrimaryTitles",count:"" }]
+        [{ search: "PrimaryTitles", count: ""}]
     );
  
     let SearchInput = ko.observable();
