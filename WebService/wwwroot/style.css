@@ -5,14 +5,15 @@
     background-size: cover
 }
 
-h1 {  
-    font-size: 32px;
+h1 {
+    text-align: center;
+    font-size: 62px;
     color: darkred;
 }
 
 h2 {
     font-size: 23px;
-    color: darkgrey;
+    color: darkkhaki;
 }
 
 
@@ -51,13 +52,20 @@ divc {
         color: darkred;
       
     }
-     
+    from {
+        color: darkred;
+    }
+    to {
+        color: steelblue;
+    } 
+
+
 }
 
 /* The element to apply the animation to */
 h1 {
     animation-name: example;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
