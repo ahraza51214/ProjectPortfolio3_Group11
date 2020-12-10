@@ -8,7 +8,7 @@
 h1 {
     text-align: center;
     font-size: 62px;
-    color: darkred;
+    
 }
 
 h2 {
@@ -45,19 +45,14 @@ divc {
 
 @keyframes example {
     from {
-        color: navajowhite;
+        color: steelblue;
     }
 
     to {
-        color: darkred;
-      
-    }
-    from {
+        color: navajowhite;
         color: darkred;
     }
-    to {
-        color: steelblue;
-    } 
+    
 
 
 }
