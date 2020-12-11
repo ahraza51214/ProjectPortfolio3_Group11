@@ -14,7 +14,7 @@ namespace ProjectPortfolio2_Group11.Controller
     [Route("api/rating")]
     public class RatingController :  ControllerBase
     {
-        private readonly DataServiceFacade _dataServiceFacade;
+        private readonly  DataServiceFacade _dataServiceFacade;
         private readonly IMapper _mapper;
 
         public RatingController(DataServiceFacade dataServiceFacade, IMapper mapper)

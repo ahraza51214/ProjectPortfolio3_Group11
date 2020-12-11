@@ -43,10 +43,6 @@ namespace ProjectPortfolio2_Group11.Controller
              }
          } */
 
-       
-
-       
-
         [HttpGet("{userId}")] // comment the below HTTPGet method for enabling authorization
         public IActionResult GetSearchHistory(int userId)
         {

@@ -11,7 +11,6 @@ namespace DataServiceLib
         {
             _connectionString = connectionString;
         }
-
         public DbSet<ActorsKnownForTitles> ActorsKnownForTitles { get; set; }
         public DbSet<ActorsProfession> ActorsProfessions { get; set; }
         public DbSet<BookmarkPerson> BookmarkPerson { get; set; }
@@ -138,7 +137,6 @@ namespace DataServiceLib
             modelBuilder.Entity<Users>().Property(x => x.Password).HasColumnName("password");
             modelBuilder.Entity<Users>().Property(x => x.Salt).HasColumnName("salt");
             modelBuilder.Entity<Users>().HasKey(x => x.UserId);
-       
 
             modelBuilder.Entity<UserTitleRate>().ToTable("user_titlerate");
             modelBuilder.Entity<UserTitleRate>().Property(x => x.UserId).HasColumnName("userid");

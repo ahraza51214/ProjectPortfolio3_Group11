@@ -13,7 +13,7 @@
     let salt = ko.observable();
     let responseMessage = ko.observable();
  
-    let UserState = ko.observable(false);
+     
 
     /*let Userbool = () => UserState(true);
     let CancelState = () => UserState(false); */
