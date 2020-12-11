@@ -7416,19 +7416,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aliha\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebServiceTests\\WebServiceTests.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
       "projectName": "WebServiceTests",
-      "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebServiceTests\\WebServiceTests.csproj",
-      "packagesPath": "C:\\Users\\aliha\\.nuget\\packages\\",
-      "outputPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebServiceTests\\obj\\",
+      "projectPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebServiceTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aliha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7440,12 +7444,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\DataServiceLib.csproj": {
-              "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\DataServiceLib.csproj"
+            "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj"
             },
-            "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebService\\WebService.csproj": {
-              "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebService\\WebService.csproj"
+            "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj"
             }
           }
         }
@@ -7458,6 +7463,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "FluentAssertions": {
             "target": "Package",
@@ -7494,6 +7500,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7502,7 +7514,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

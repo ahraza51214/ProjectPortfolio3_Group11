@@ -1,5 +1,7 @@
 ﻿body {
-    background-image: url("background.gif");
+     background-image: url("spacemove.gif"); 
+     background-image: url("purple3.gif");  
+    background-image: url("sunset.gif");
     background-size: cover
 }
 
@@ -17,7 +19,7 @@ h2 {
 
 h3 {
     font-size: 18px;
-    color: #0b22b8;
+    color: darkgoldenrod;
 }
 
 h4 {
@@ -48,7 +50,7 @@ divc {
 
     to {
         color: navajowhite;
-        color: #8b0000;
+        color: darkred;
     }
     
 

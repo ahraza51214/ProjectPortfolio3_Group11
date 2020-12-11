@@ -11,6 +11,7 @@
 
         let deleteBookmark = url => fetch("api/bookmark/" + userId() + "/" + nconst(), { method: "DELETE" });
 
+
         let createBookmark = function () {
 
             let headers = new Headers();
@@ -18,38 +19,48 @@
             fetch("api/bookmark", {
                 method: "POST", body: JSON.stringify({ nConst: nconst(), userId: +userId() }), headers
             })
+
                 .then(response => response.json())
+
         }
-        
+
+
         let getBookmarks = function () {
             fetch("api/bookmark/" + userId())
 
 
                 .then(function (response) {
+
                     if (response.status === 404 || response.status === 400) {
                         responseMessage("Invalid request! Please type a valid userId!");
                         bookmarks("");
                         throw new Error(response.status + " Bookmark Not found ");
                     }
                     if (response.status === 200) {
+
                         responseMessage("Bookmark retrieved succesfully!");
                     }
+
+
                     return response.json();
                 }
+
                 )
                 .then(function (data) {
                     bookmarks(data);
+
                 });
+
         }
 
+
         return {
-            nconst,
-            userId,
-            bookmarks, 
-            getBookmarks, 
-            responseMessage,
-            deleteBookmark, 
-            createBookmark
+            nconst, userId,
+
+            bookmarks, getBookmarks, responseMessage,
+            deleteBookmark, createBookmark
+
+
         };
     }
 });

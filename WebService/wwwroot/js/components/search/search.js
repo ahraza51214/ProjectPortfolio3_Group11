@@ -1,15 +1,19 @@
 ﻿define(['knockout'], function (ko) {
     return function () {
 
+        let mysearch = ko.observableArray(
+            [{ storedInput: "", dateTime: "" }]);
+
         resultSearch = ko.observableArray(
             [{ search: "PrimaryTitles", count: "" }]
         );
 
         let SearchInput = ko.observable();
+
+        let userId = ko.observable(0);
         let page = ko.observable(0);
         let pageSize = ko.observable(50);
         let responseMessage = ko.observable();
-        let userId = ko.observable(0);
 
         next = function () {
             page(page() + 1);
@@ -22,6 +26,24 @@
             page(page() - 1);
         }
 
+        let getSearch = function () {
+            fetch("api/search/" + userId())
+
+                .then(function (response) {
+
+                    if (response.status === 404) {
+                        mysearch("");
+
+                    }
+                    return response.json();
+                })
+                .then(function (data) {
+                    mysearch(data);
+
+                }
+                );
+        }
+
         let createSearch = function () {
 
             let headers = new Headers();
@@ -30,21 +52,34 @@
                 method: "POST", body: JSON.stringify({ userid: +userId(), searchInput: SearchInput() }), headers
             })
                 .then(function (response) {
+
+
                     if (response.status === 404) {
                         responseMessage(" No search matches found!");
                         resultSearch("");
                         throw new Error(response.status + " No search matches found ");
                     }
+
                     responseMessage("");
+
+
                     return response.json();
                 })
                 .then(function (data) {
+
                     resultSearch(data);
+
+
                 });
+
         }
-        
+
+
         return {
-            SearchInput, createSearch, page, pageSize, next, prev, responseMessage, userId
+            SearchInput, createSearch, getSearch,
+
+            mysearch, userId, page, pageSize, next, prev, responseMessage
+
         };
     }
 });

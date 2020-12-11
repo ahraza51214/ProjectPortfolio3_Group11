@@ -1,50 +1,11 @@
-﻿<form class="col-4">
-    <h3>Login</h3>
-    <div class="mb-3">
-        <label class="form-label">UserId</label>
-        <input class="form-control" data-bind="value: userId" required>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" data-bind="value: password" required>
-    </div>
-    <button type="submit" class="btn btn-primary" data-bind="click: getUsers">Login</button>
-
-    <h4 data-bind="text: responseMessage  ">
-    </h4>
-    
-    <ul data-bind="foreach: User">
-        <!--each User Objects will have these attributes shown after clicking getUsers-->
-        <li>
-            <h5>
-                <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
-            </h5>
-        </li>
-    </ul>
-</form>
-
-<form class="col-4">
-    <h3>Signup</h3>
-    <div class="mb-3">
-        <label class="form-label">Name</label>
-        <input class="form-control" data-bind="value: name" required>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Age</label>
-        <input class="form-control" data-bind="value: age" required>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Username</label>
-        <input class="form-control" data-bind="value: username" required>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Language</label>
-        <input class="form-control" data-bind="value: language" required>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" data-bind="value: password" required>
-    </div>
-    <button type="submit" class="btn btn-primary" data-bind="click: createUsers">Signup</button>
-</form>
-
+﻿<div class="border">
+    <h3>Login Component</h3>
+    <form>
+        <label>Username</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label>Password</label><br>
+        <input type="text" id="password" name="password"><br><br>
+        <input type="submit" value="Register">
+        <button type="submit">Go to Sign Up</button>
+    </form>
+</div>

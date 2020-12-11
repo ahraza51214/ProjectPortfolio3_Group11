@@ -1,14 +1,16 @@
 ﻿require.config({
     baseUrl: "js",
     paths: {
-        knockout: "lib/knockout/knockout-latest.debug",
-        text: "lib/require-text/text.min",
-        jquery: "lib/jquery/jquery.min",
-        bootstrap: "../css/lib/twitter-bootstrap/js/bootstrap.bundle.min",
-    },
-    shim: {
-        bootstrap: ['jquery']
+        knockout: "lib/knockout/knockout-latest",
+        text: "lib/require-text/text.min"
     }
+});
+
+require(['knockout', 'text'], (ko) => {
+    ko.components.register("fp", {
+        viewModel: { require: "components/fp/fp" },
+        template: { require: "text!components/fp/fp.html" }
+    });
 });
 
 require(['knockout', 'text'], (ko) => {
@@ -19,16 +21,9 @@ require(['knockout', 'text'], (ko) => {
 });
 
 require(['knockout', 'text'], (ko) => {
-    ko.components.register("edituser", {
-        viewModel: { require: "components/edituser/edituser" },
-        template: { require: "text!components/edituser/edituser.html" }
-    });
-});
-
-require(['knockout', 'text'], (ko) => {
-    ko.components.register("searchhistory", {
-        viewModel: { require: "components/searchhistory/searchhistory" },
-        template: { require: "text!components/searchhistory/searchhistory.html" }
+    ko.components.register("signup", {
+        viewModel: { require: "components/signup/signup" },
+        template: { require: "text!components/signup/signup.html" }
     });
 });
 
@@ -53,6 +48,9 @@ require(['knockout', 'text'], (ko) => {
     });
 });
 
-require(['knockout', 'FrontPageviewModel', 'bootstrap'], function (ko, fpvm) {
+
+require(['knockout', 'FrontPageviewModel'], function (ko, fpvm) {
+
     ko.applyBindings(fpvm);
+
 });
