@@ -8,9 +8,9 @@ require.config({
 });
 
 
-require(['knockout', 'BookmarkviewModel', 'UserviewModel', 'SearchviewModel'], function (ko, bookmarkviewModel, userviewModel, searchviewModel) {
+require(['knockout', 'BookmarkviewModel', 'UserviewModel', 'SearchviewModel', 'RatingViewModel'], function (ko, bookmarkviewModel, userviewModel, searchviewModel, ratingViewModel) {
     var viewmodel = {
-        bookmarkviewModel, userviewModel,searchviewModel
+        bookmarkviewModel, userviewModel,searchviewModel, ratingViewModel
     }
    
     ko.applyBindings(viewmodel);

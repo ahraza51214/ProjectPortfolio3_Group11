@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\WebServiceTests\\WebServiceTests.csproj",
+    "projectUniqueName": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebServiceTests\\WebServiceTests.csproj",
     "projectName": "WebServiceTests",
-    "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\WebServiceTests\\WebServiceTests.csproj",
-    "outputPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\WebServiceTests\\obj\\",
+    "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebServiceTests\\WebServiceTests.csproj",
+    "outputPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebServiceTests\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -16,11 +16,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\DataServiceLib\\DataServiceLib.csproj": {
-            "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\DataServiceLib\\DataServiceLib.csproj"
+          "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\DataServiceLib.csproj": {
+            "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\DataServiceLib.csproj"
           },
-          "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\WebService\\WebService.csproj": {
-            "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\WebService\\WebService.csproj"
+          "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebService\\WebService.csproj": {
+            "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\WebService\\WebService.csproj"
           }
         }
       }
