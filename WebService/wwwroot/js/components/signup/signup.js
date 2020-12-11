@@ -12,7 +12,7 @@
         let password = ko.observable();
         let salt = ko.observable();
         let responseMessage = ko.observable();
-
+        let displayComponents = ko.observable(false);
 
 
         /*let Userbool = () => UserState(true);
@@ -81,7 +81,7 @@
             age, language, username, name,
 
             User, userId, getUsers,
-            deleteUser, createUsers, updateUsers, password, salt, responseMessage
+            deleteUser, createUsers, updateUsers, password, salt, responseMessage, displayComponents
         };
     }
 });
