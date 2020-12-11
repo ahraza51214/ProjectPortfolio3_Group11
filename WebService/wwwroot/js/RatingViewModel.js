@@ -1,11 +1,11 @@
 ﻿define(['knockout'], function (ko) {
     
     let ratings = ko.observableArray(
-        [{ tConst: "", userId: "", TitleIndividRating: "" }]);
+        [{userId: "", titleIndividRating: "", tConst: "", userTitleRateDate: ""}]);
 
     let tconst = ko.observable();
-    let userId = ko.observable("");
-    let titleIndividRating = ko.observable("");
+    let userId = ko.observable();
+    let titleIndividRating = ko.observable();
     let responseMessage = ko.observable();
 
     let createRating = function () {
@@ -13,7 +13,7 @@
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
         fetch("api/rating", {
-            method: "POST", body: JSON.stringify({ tConst: tconst(), userId: userId(), TitleIndividRating: titleIndividRating()}), headers
+            method: "POST", body: JSON.stringify({ tConst: tconst(), userId: +userId(), titleIndividRating: +titleIndividRating()}), headers
         })
             .then(response => response.json())
     }
