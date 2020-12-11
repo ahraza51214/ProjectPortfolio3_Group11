@@ -1,0 +1,28 @@
+﻿<div>
+    <h2>Bookmark</h2>
+</div>
+
+<div>
+
+    <button data-bind="click: getBookmarks">getBookmarks</button>
+    <button data-bind="click: deleteBookmark">deleteBookmark</button>
+
+    <div data-bind="text: responseMessage  "> </div>
+
+
+    <ul data-bind="foreach: bookmarks">
+        <li>
+            <h3>  <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span> </h3>
+
+        </li>
+    </ul>
+    <button data-bind="click: createBookmark">createNewBookmark</button>
+
+
+    <h4>
+        UserId <input data-bind="value: userId " required>
+        Nconst <input data-bind="value: nconst" required>
+    </h4>
+
+
+</div>
