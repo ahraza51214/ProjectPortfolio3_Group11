@@ -7,24 +7,34 @@
 </head>
 
 <body>
+
     <h1>Movie application</h1>
+
+
+    <login></login>
+    <search></search>
 
     <h2>User profile</h2>
 
-    <fp></fp>
 
-    <signup></signup>
-     
-    <login></login>
-     
-    <bookmark></bookmark>
-     
-    <rating></rating>
-     
-    <search></search>
+    <div data-bind="ifnot: displayComponents">
+        <!-- if displayComponents is true, show components below  -->
 
-  
+        <fp> </fp>
+
+
+        <signup></signup>
+
+        <bookmark></bookmark>
+
+        <rating></rating>
+
+        <search></search>
+
+    </div>     <!-- the boolean displayComponents doesnt work atm, because i cant find a way to call displayComponents outside the .js it is initiated + 
+                       you cant wrap 1 component inside another component. The console returns an error saying it's not defined-->
+
     <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
 </body>
-</html>
+    </html>

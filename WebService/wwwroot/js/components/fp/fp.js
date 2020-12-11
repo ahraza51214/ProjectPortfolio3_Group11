@@ -1,5 +1,7 @@
 ﻿define(['knockout'], (ko) => {
     return function () {
+
+       
         let selectedComponent = ko.observable('signup');
 
         let changeContent = () => {
@@ -10,8 +12,7 @@
                 selectedComponent('signup');
             }
         }
-
-
+ 
 
         return {
             selectedComponent,

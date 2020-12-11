@@ -4409,23 +4409,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bob-w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj",
+      "projectUniqueName": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj",
       "projectName": "WebService",
-      "projectPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\WebService\\obj\\",
+      "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\WebService.csproj",
+      "packagesPath": "C:\\Users\\bob-w\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\WebService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bob-w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4437,10 +4433,9 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\posledno\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj"
+            "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj": {
+              "projectPath": "C:\\Users\\bob-w\\source\\repos\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj"
             }
           }
         }
@@ -4453,7 +4448,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -4474,16 +4468,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.10, 3.1.10]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4492,7 +4476,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
