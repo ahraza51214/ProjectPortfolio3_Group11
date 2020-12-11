@@ -25,3 +25,12 @@ C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\n
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.dll
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.pdb
 C:\Users\bob-w\source\repos\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.csprojAssemblyReference.cache
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.dll
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.pdb
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.csprojAssemblyReference.cache
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.AssemblyInfoInputs.cache
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.AssemblyInfo.cs
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.csproj.CoreCompileInputs.cache
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.deps.json
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.dll
+D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.pdb

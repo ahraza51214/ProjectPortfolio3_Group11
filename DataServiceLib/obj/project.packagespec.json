@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\DataServiceLib\\DataServiceLib.csproj",
+    "projectUniqueName": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\DataServiceLib.csproj",
     "projectName": "DataServiceLib",
-    "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\DataServiceLib\\DataServiceLib.csproj",
-    "outputPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\ProjectPortfolio2_Group11-master\\ProjectPortfolio2_Group11-master\\DataServiceLib\\obj\\",
+    "projectPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\DataServiceLib.csproj",
+    "outputPath": "D:\\RUC\\Kandidat\\1 Semester\\Project portfolio\\Project portfolio 3\\Project3\\DataServiceLib\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
