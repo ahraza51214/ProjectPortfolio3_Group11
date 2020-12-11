@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EJDP3jtTJvjbZuoj7mizLuZqmLYyvmLed55JujsGDo5F0XrbVqplnmYc4eAhplcftdofxEkDi9mnMlDUCIWtOw==",
+  "dgSpecHash": "wnbIMZk7FmRj4Q7onWQCHdYKBrF6WCD1YvBgC5h9yiit3ukQ9ZTc3kuxrfEK3twBkxELHjnbYL9WdoZORUVhKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\New folder (3)\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\moe\\ProjectPortfolio3_Group11\\WebServiceTests\\WebServiceTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
@@ -138,7 +138,8 @@
     "C:\\Users\\HP\\.nuget\\packages\\xunit.core\\2.4.0\\xunit.core.2.4.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\xunit.extensibility.core\\2.4.0\\xunit.extensibility.core.2.4.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }

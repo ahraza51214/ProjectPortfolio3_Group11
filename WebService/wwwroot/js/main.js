@@ -1,8 +1,6 @@
-﻿
-
-require.config({
+﻿require.config({
     baseUrl: "js",
-    paths : {
+    paths: {
         knockout: "lib/knockout/knockout-latest",
         text: "lib/require-text/text.min"
     }
@@ -10,9 +8,9 @@ require.config({
 
 require(['knockout', 'text'], (ko) => {
     ko.components.register("fp", {
-        viewModel: { require: "components/fp/fp"},
+        viewModel: { require: "components/fp/fp" },
         template: { require: "text!components/fp/fp.html" }
-    });    
+    });
 });
 
 require(['knockout', 'text'], (ko) => {
@@ -29,17 +27,17 @@ require(['knockout', 'text'], (ko) => {
     });
 });
 
-
-
-require(['knockout', 'BookmarkviewModel', 'UserviewModel', 'SearchviewModel', 'FrontPageviewModel'], function (ko, bookmarkviewModel, userviewModel, searchviewModel, FrontPageviewModel) {
-    var viewmodel = {
-        bookmarkviewModel, userviewModel, searchviewModel, FrontPageviewModel
-    }
-   
-    ko.applyBindings(viewmodel);
-
+require(['knockout', 'text'], (ko) => {
+    ko.components.register("search", {
+        viewModel: { require: "components/search/search" },
+        template: { require: "text!components/search/search.html" }
+    });
 });
 
 
 
+require(['knockout', 'FrontPageviewModel'], function (ko, fpvm) {
 
+    ko.applyBindings(fpvm);
+
+});

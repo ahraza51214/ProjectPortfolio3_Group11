@@ -7,118 +7,12 @@
 <body>
 
     <fp></fp>
-
     
-
     <h1>Movie application</h1>
 
     <h3>User profile</h3>
 
-
-    <div data-bind="with:userviewModel ">
-        <button data-bind="click:  getUsers">GetUsers</button>
-        <button data-bind="click: deleteUser">deleteUsers</button>
-
-        <input data-bind="value: userId " required>
-
-        <ul data-bind="foreach: names">
-            <li>
-                <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
-
-            </li>
-        </ul>
-
-
-        <h4>
-            Name
-            <input data-bind="value: name" required>
-
-            Age
-            <input data-bind="value: age" required>
-
-            Username
-            <input data-bind="value: username" required>
-
-            Language
-            <input data-bind="value: language" required>
-            Password
-            <input data-bind="value: password" required>
-            Salt
-            <input data-bind="value: salt" required>
-        </h4>
-
-        <button data-bind="click: createUsers">createUsers</button>
-        <button data-bind="click: updateUsers">updateUsers</button>
-    </div>
-
-    <div>
-        <h1>Bookmark</h1>
-    </div>
-
-    <div data-bind="with:bookmarkviewModel ">
-
-        <button data-bind="click: GetBookmarks">getBookmarks</button>
-        <button data-bind="click: DeleteBookmark">deleteBookmark</button>
-
-
-        <ul data-bind="foreach: bookmarks">
-            <li>
-                <span data-bind="text: nconst + ' ' + userId  "></span>
-
-            </li>
-        </ul>
-        <button data-bind="click: createBookmark">createNewBookmark</button>
-
-
-
-        <input data-bind="value: nconst" required>
-
-        <div>
-            <h1>Search</h1>
-        </div>
-    </div>
-
-    <div data-bind="with:searchviewModel ">
-
-        <button data-bind="click: getSearch">GetSearch</button>
-        Userid <input data-bind="value: userId" required>
-
-        <ul data-bind="foreach:  mysearch">
-            <li>
-                <span data-bind="text:   'Search_Input: ´' + searchInput + '´' + ' SearchDate: '+ dateTime "></span>
-
-            </li>
-        </ul>
-
-
-        <h4>
-            SearchInput
-            <input data-bind="value: SearchInput" required>
-
-            Page
-            <input data-bind="value: page" required>
-            Result Size
-            <input data-bind="value: pageSize" required>
-        </h4>
-
-        <button data-bind="click: createSearch">Search</button>
-
-        <ul data-bind="foreach:  resultSearch">
-            <li>
-                <span data-bind="text:   JSON.stringify(search)  "></span>
-
-
-            </li>
-        </ul>
-
-    </div>
-
-
-
-
     <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
-
-
 
 </body>
 </html>

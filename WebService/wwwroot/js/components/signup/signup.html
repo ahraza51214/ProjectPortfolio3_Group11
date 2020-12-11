@@ -1,11 +1,39 @@
-﻿<div class="border">
-    <h3>Sign up Component</h3>
-    <form>
-        <label>Username</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label>Password</label><br>
-        <input type="text" id="password" name="password"><br><br>
-        <input type="submit" value="Register">
-        <button type="submit">Go to Login</button>
-    </form>
+﻿<div>
+    <button data-bind="click:  getUsers">GetUsers</button>
+    <button data-bind="click: deleteUser">deleteUsers</button>
+
+    <div data-bind="text: responseMessage  "> </div>
+    <!--handles feedback to the users-->
+
+    <input data-bind="value: userId " required>
+
+    <ul data-bind="foreach: User">
+        <!-- each User Objects will have these attributes shown after clicking getUsers-->
+        <li>
+            <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
+
+        </li>
+    </ul>
+
+
+    <h4>
+        Name
+        <input data-bind="value: name" required>
+
+        Age
+        <input data-bind="value: age" required>
+
+        Username
+        <input data-bind="value: username" required>
+
+        Language
+        <input data-bind="value: language" required>
+        Password
+        <input data-bind="value: password" required>
+        Salt
+        <input data-bind="value: salt" required>
+    </h4>
+
+    <button data-bind="click: createUsers">createUsers</button>
+    <button data-bind="click: updateUsers">updateUsers</button>
 </div>

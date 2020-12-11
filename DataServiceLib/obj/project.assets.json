@@ -768,11 +768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\New folder (3)\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\moe\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj",
       "projectName": "DataServiceLib",
-      "projectPath": "C:\\Users\\HP\\Desktop\\New folder (3)\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\moe\\ProjectPortfolio3_Group11\\DataServiceLib\\DataServiceLib.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\New folder (3)\\ProjectPortfolio3_Group11\\DataServiceLib\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\moe\\ProjectPortfolio3_Group11\\DataServiceLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -823,12 +823,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
