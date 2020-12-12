@@ -2,21 +2,21 @@
     return function () {
 
        
-        let selectedComponent = ko.observable('signup');
+        //let selectedComponent = ko.observable('signup');
 
-        let changeContent = () => {
-            if (selectedComponent() === "signup") {
-                selectedComponent('login');
-            } else {
+        //let changeContent = () => {
+        //    if (selectedComponent() === "signup") {
+        //        selectedComponent('login');
+        //    } else {
 
-                selectedComponent('signup');
-            }
-        }
+        //        selectedComponent('signup');
+        //    }
+        //}
  
 
         return {
-            selectedComponent,
-            changeContent
+            //selectedComponent,
+            //changeContent
         };
     }
 });

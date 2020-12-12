@@ -77,11 +77,35 @@
 
         }
 
-        return {
-            age, language, username, name,
+        //let selectedComponent = ko.observable('signup');
 
-            User, userId, getUsers,
-            deleteUser, createUsers, updateUsers, password, salt, responseMessage
+        //let changeContent = () => {
+        //    if (selectedComponent() === "login") {
+        //        selectedComponent('signup');
+        //    } else {
+
+        //        selectedComponent('signup');
+        //    }
+        //}
+
+
+
+        return {
+            age,
+            language,
+            username,
+            name,
+            User,
+            userId,
+            getUsers,
+            deleteUser,
+            createUsers,
+            updateUsers,
+            password,
+            salt,
+            responseMessage
+            //selectedComponent,
+            //changeContent
         };
     }
 });
