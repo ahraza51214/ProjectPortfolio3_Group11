@@ -12,7 +12,7 @@
         let password = ko.observable();
         let salt = ko.observable();
         let responseMessage = ko.observable();
-        let displayComponents = ko.observable(false);
+    
 
 
         /*let Userbool = () => UserState(true);
@@ -50,7 +50,7 @@
 
 
         let getUsers = function () {
-            fetch("api/users/" + userId())
+            fetch("api/users/" + userId() + "/"+ password())
 
                 .then(function (response) {
 
@@ -81,7 +81,7 @@
             age, language, username, name,
 
             User, userId, getUsers,
-            deleteUser, createUsers, updateUsers, password, salt, responseMessage, displayComponents
+            deleteUser, createUsers, updateUsers, password, salt, responseMessage
         };
     }
 });

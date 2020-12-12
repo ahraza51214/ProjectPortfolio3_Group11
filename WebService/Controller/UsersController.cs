@@ -30,14 +30,30 @@ namespace ProjectPortfolio2_Group11.Controller
             _configuration = configuration;
         }
 
-  
-        [HttpGet("{userId}", Name = nameof(GetUser))]
 
-      
-        public IActionResult GetUser(int userId)
+        /*  [HttpGet("{userId}", Name = nameof(GetUser))]
+
+
+          public IActionResult GetUser(int userId)
+          {
+              var user = _dataServiceFacade.UsersDs.GetUser(userId);
+
+              if (user == null)
+              {
+                  return NotFound("user not found");
+              }
+              return Ok(_mapper.Map<UsersDto>(user));
+          } */
+
+
+
+        [HttpGet("{userId}/{password}")]
+
+
+        public IActionResult GetUser(int userId,string password)
         {
-            var user = _dataServiceFacade.UsersDs.GetUser(userId);
-            
+            var user = _dataServiceFacade.UsersDs.GetUser(userId,password);
+
             if (user == null)
             {
                 return NotFound("user not found");
@@ -45,7 +61,8 @@ namespace ProjectPortfolio2_Group11.Controller
             return Ok(_mapper.Map<UsersDto>(user));
         }
 
-         
+
+
         [HttpPost]
         public IActionResult CreateUsers(UsersForCreationDto usersForCreationDto)
         {
