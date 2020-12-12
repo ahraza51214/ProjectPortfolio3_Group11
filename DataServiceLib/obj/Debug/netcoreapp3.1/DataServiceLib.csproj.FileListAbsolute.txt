@@ -34,3 +34,12 @@ D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataSe
 D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.deps.json
 D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.dll
 D:\RUC\Kandidat\1 Semester\Project portfolio\Project portfolio 3\Project3\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.pdb
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.deps.json
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.dll
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\bin\Debug\netcoreapp3.1\DataServiceLib.pdb
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.AssemblyInfo.cs
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.dll
+C:\Users\HP\Desktop\posledno\ProjectPortfolio3_Group11\DataServiceLib\obj\Debug\netcoreapp3.1\DataServiceLib.pdb

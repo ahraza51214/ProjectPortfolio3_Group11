@@ -1,0 +1,26 @@
+﻿<div>
+    <h2>Rating</h2>
+</div>
+
+<div>
+
+    <button data-bind="click: getRating">getRating</button>
+
+    <div data-bind="text: responseMessage  "> </div>
+
+
+    <ul data-bind="foreach: ratings">
+        <li>
+            <h3>  <span data-bind="text:  'userid '+ userId + ' tConst: ' + tConst + ' rate: ' + titleIndividRating + ' Date: ' + userTitleRateDate"></span> </h3>
+
+        </li>
+    </ul>
+    <button data-bind="click: createRating">createNewRating</button>
+
+
+    <h4>
+        UserId <input data-bind="value: userId " required>
+        Tconst <input data-bind="value: tconst" required>
+        Rate <input data-bind="value: titleIndividRating" required>
+    </h4>
+</div>

@@ -15,10 +15,16 @@ namespace DataServiceLib.DataService
             _db = new Raw11Context(connStr);
         }
 
-        public Users GetUser(int userId)
+        public Users GetUser(int userId)  
         {
             return _db.Users.FirstOrDefault(x => x.UserId == userId);
         }
+
+        public Users GetUser(int userId,string password) // used only for authentication
+        {
+            return _db.Users.FirstOrDefault(x => x.UserId == userId && x.Password == password);
+        }
+
 
         public void CreateUser(Users user)
         {
