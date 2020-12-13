@@ -51,12 +51,7 @@
  
 
         return {
-<<<<<<< Updated upstream
-            age, language, username, name,
-
-            User, userId, getUsers,
-            deleteUser, createUsers, updateUsers, password, salt, responseMessage
-=======
+ 
             age,
             language,
             username,
@@ -72,7 +67,7 @@
            
             //selectedComponent,
             //changeContent
->>>>>>> Stashed changes
+ 
         };
     }
 });

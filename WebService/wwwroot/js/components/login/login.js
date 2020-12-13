@@ -1,12 +1,4 @@
-<<<<<<< Updated upstream
-﻿define([], () => {
-    return function (params) {
-        let name = params.value || "noname";
-        //debugger;
-        return {
-            name
-        }
-=======
+
 ﻿define(['knockout'], (ko) => {
     return function () {
 
@@ -65,6 +57,6 @@
             //selectedComponent,
             //changeContent
         };
->>>>>>> Stashed changes
+ 
     }
 });
