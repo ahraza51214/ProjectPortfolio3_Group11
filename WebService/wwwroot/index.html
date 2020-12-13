@@ -10,6 +10,29 @@
 
     <h1>Movie application</h1>
 
+<<<<<<< Updated upstream
+=======
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" data-bind="foreach: menuElements">
+
+                <li class="nav-item" data-bind="css: $parent.isActive($data)">
+                    <div data-bind="ifnot: $parent.showContent">Here is a message. Astonishing.</div>
+                    <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
+                        <span data-bind="text: $data"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div data-bind="component: {name: currentComponent}"></div>
+
+>>>>>>> Stashed changes
 
     <login></login>
     <search></search>

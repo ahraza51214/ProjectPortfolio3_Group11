@@ -1,8 +1,8 @@
 ﻿define(['knockout'], function (ko) {
     return function () {
 
-        let User = ko.observableArray(
-            [{ language: "", name: "", username: "", age: "" }]);
+     /*   let User = ko.observableArray(
+            [{ language: "", name: "", username: "", age: "" }]); */
 
         let userId = ko.observable();
         let name = ko.observable();
@@ -11,7 +11,7 @@
         let language = ko.observable();
         let password = ko.observable();
         let salt = ko.observable();
-        let responseMessage = ko.observable();
+       
     
 
 
@@ -48,40 +48,31 @@
 
         }
 
-
-        let getUsers = function () {
-            fetch("api/users/" + userId() + "/"+ password())
-
-                .then(function (response) {
-
-                    if (response.status === 404 || response.status === 400) {
-                        responseMessage("Invalid userId! Please type a valid userId!");
-                        User("");
-                        throw new Error(response.status + " User Not found ");
-                    }
-                    if (response.status === 200) {
-
-                        responseMessage("User retrieved succesfully!");
-                    }
-
-
-                    return response.json();
-                }
-
-                )
-                .then(function (data) {
-                    User(data);
-
-                });
-
-
-        }
+ 
 
         return {
+<<<<<<< Updated upstream
             age, language, username, name,
 
             User, userId, getUsers,
             deleteUser, createUsers, updateUsers, password, salt, responseMessage
+=======
+            age,
+            language,
+            username,
+            name,
+            
+            userId,
+          
+            deleteUser,
+            createUsers,
+            updateUsers,
+            password,
+            salt
+           
+            //selectedComponent,
+            //changeContent
+>>>>>>> Stashed changes
         };
     }
 });
