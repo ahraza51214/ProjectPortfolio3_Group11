@@ -1,9 +1,9 @@
 ﻿<div class="border">
     <h3>Login Component</h3>
     <form>
- 
-    
- 
+
+        <!-- <div>   <h2 data-bind="if: showContent">My message is now visible.  </h2> </div>-->
+
         <h4 data-bind="text: responseMessage  ">
         </h4>
 
@@ -18,13 +18,13 @@
             </li>
         </ul>
 
-       
+
         <input data-bind="value: userId" required>
         <label>UserId</label><br>
         <input data-bind="value: password" required>
         <label>password</label><br>
         <div></div>
         <button data-bind="click:  getUsers">login</button>
- 
+
     </form>
 </div>

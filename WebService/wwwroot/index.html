@@ -5,6 +5,7 @@
     <link href="js/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
     <!--reference doesnt work, if the css inst located in the same folder as index for some reaons-->
     <!-- this reference doesnt work <link href="css/style.css" rel="stylesheet" />, the one at line 4 does  -->
+ 
 </head>
 
 <body>
@@ -16,16 +17,23 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav" data-bind="foreach: menuElements">
+        <div>
+            <h2 data-bind="ifnot: parent.showContent"> Toogle: message now visible.  </h2>
+            <!-- Doesnt work atm, because HTML can't find the showContent observable object. The reference is incorrect/ missing something -->
+            <!--  Message above should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
+            <div class="collapse navbar-collapse" id="navbarNav">
 
-                <li class="nav-item" data-bind="css: $parent.isActive($data)">
-                    <div data-bind="ifnot: $parent.showContent">Here is a message. Astonishing.</div>
-                    <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
-                        <span data-bind="text: $data"></span>
-                    </a>
-                </li>
-            </ul>
+
+                <ul class="navbar-nav" data-bind="foreach: menuElements">
+
+                    <li class="nav-item" data-bind="css: $parent.isActive($data)">
+
+                        <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
+                            <span data-bind="text: $data"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -45,4 +53,4 @@
     <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 
 </body>
-</html>
+    </html>

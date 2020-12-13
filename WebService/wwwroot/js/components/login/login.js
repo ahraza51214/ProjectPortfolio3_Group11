@@ -1,5 +1,4 @@
-
-﻿define(['knockout'], (ko) => {
+define(['knockout'], (ko) => {
     return function () {
 
         let User = ko.observableArray(
@@ -19,6 +18,8 @@
         let password = ko.observable();
         let userId = ko.observable();
         let showContent = ko.observable(false);
+     
+
         let getUsers = function () {
             fetch("api/users/" + userId() + "/" + password())
 
@@ -28,14 +29,14 @@
                         responseMessage("Invalid userId or Password! Please type a valid credentials!");
                         User("");
                         throw new Error(response.status + " Authentication failed ");
-                        showContent(false);
+
                     }
                     if (response.status === 200) {
                         showContent(true);
+                         
                         responseMessage("Login succesful!");
                     }
-
-
+                    
                     return response.json();
                 }
 
