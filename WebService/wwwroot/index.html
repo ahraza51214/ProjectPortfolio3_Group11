@@ -11,39 +11,53 @@
 <body>
 
     <h1>Movie application</h1>
+    <h3>Login Component</h3>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navigation</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div>
-             
-            
+    <input data-bind="value: userId" required>
+    <label>UserId</label><br>
+    <input data-bind="value: password" required>
+    <label>password</label><br>
+    <button data-bind="click:  getUsers">login</button>
+
+    <div data-bind="if: showContent">
+    
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navigation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+
+
                 <div class="collapse navbar-collapse" id="navbarNav">
 
 
                     <ul class="navbar-nav" data-bind="foreach: menuElements">
 
                         <li class="nav-item" data-bind="css: $parent.isActive($data)">
-                            <div data-bind="ifnot: parent.showContent">  Toogle:message now visible
+
+
                             <!-- Doesnt work, because HTML can't find the showContent observable object. The reference to showContent, from login.js, is incorrect/ missing something -->
-                                <!--  the Message   should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
+                            <!--  the Message   should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
 
-                                <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
-                                    <span data-bind="text: $data"></span>
+                            <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
+                                <span data-bind="text: $data"></span>
 
-                                </a>
-                            </div>
-                                </li>  
+                            </a>
+
+                        </li>
                     </ul>
                 </div>
             </div>
-         
-</nav>
 
-    <div data-bind="component: {name: currentComponent}"></div>
+        </nav>
 
+        <div data-bind="component: {name: currentComponent}"></div>
+    </div>
+    <login></login>
     <search></search>
 
 
