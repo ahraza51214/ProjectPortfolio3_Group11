@@ -18,28 +18,28 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div>
-
-            <!--  <h2 data-bind="ifnot: showContent()"> Toogle: message now visible.   </h2> -->
-
-            <div>
-                <h2 data-bind="ifnot: $parent.showContent"> </h2>
-                <!-- Doesnt work atm, because HTML can't find the showContent observable object. The reference is incorrect/ missing something -->
-                <!--  Message above should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
+             
+            
                 <div class="collapse navbar-collapse" id="navbarNav">
 
 
                     <ul class="navbar-nav" data-bind="foreach: menuElements">
 
                         <li class="nav-item" data-bind="css: $parent.isActive($data)">
+                            <div data-bind="ifnot: parent.showContent">  Toogle:message now visible
+                            <!-- Doesnt work, because HTML can't find the showContent observable object. The reference to showContent, from login.js, is incorrect/ missing something -->
+                                <!--  the Message   should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
 
-                            <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
-                                <span data-bind="text: $data"></span>
-                            </a>
-                        </li>
+                                <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
+                                    <span data-bind="text: $data"></span>
+
+                                </a>
+                            </div>
+                                </li>  
                     </ul>
                 </div>
             </div>
-        </div
+         
 </nav>
 
     <div data-bind="component: {name: currentComponent}"></div>
