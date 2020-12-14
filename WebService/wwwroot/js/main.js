@@ -2,7 +2,8 @@
     baseUrl: "js",
     paths: {
         knockout: "lib/knockout/knockout-latest",
-        text: "lib/require-text/text.min"
+        text: "lib/require-text/text.min",
+         dataService: "dataService"
     }
 });
 

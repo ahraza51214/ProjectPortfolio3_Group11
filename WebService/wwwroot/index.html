@@ -13,11 +13,11 @@
     <h1>Movie application</h1>
     <h3>Login Component</h3>
 
-    <input data-bind="value: userId" required>
+    <input data-bind="value: parent.userId" required>
     <label>UserId</label><br>
-    <input data-bind="value: password" required>
+    <input data-bind="value: parent.password" required>
     <label>password</label><br>
-    <button data-bind="click:  getUsers">login</button>
+    <button data-bind="click:  parent.getUsers">login</button>
 
     <div data-bind="if: showContent">
     
