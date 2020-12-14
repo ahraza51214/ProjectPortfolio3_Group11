@@ -17,9 +17,12 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div> 
-            <div data-bind="with:signup.js "> <!-- not working, reference is wrong -->
-                <h2 data-bind="ifnot: parent.showContent"> Toogle: message now visible.  </h2>
+        <div>
+
+            <!--  <h2 data-bind="ifnot: showContent()"> Toogle: message now visible.   </h2> -->
+
+            <div>
+                <h2 data-bind="ifnot: $parent.showContent"> </h2>
                 <!-- Doesnt work atm, because HTML can't find the showContent observable object. The reference is incorrect/ missing something -->
                 <!--  Message above should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,7 +39,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div
 </nav>
 
     <div data-bind="component: {name: currentComponent}"></div>

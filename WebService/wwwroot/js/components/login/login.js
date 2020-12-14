@@ -26,7 +26,7 @@ define(['knockout'], (ko) => {
                 .then(function (response) {
 
                     if (response.status === 404 || response.status === 400) {
-                        responseMessage("Invalid userId or Password! Please type a valid credentials!");
+                        responseMessage("Invalid userId or Password! Please type  valid credentials!");
                         User("");
                         throw new Error(response.status + " Authentication failed ");
 
