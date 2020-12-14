@@ -17,35 +17,29 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div>
-            <h2 data-bind="ifnot: parent.showContent"> Toogle: message now visible.  </h2>
-            <!-- Doesnt work atm, because HTML can't find the showContent observable object. The reference is incorrect/ missing something -->
-            <!--  Message above should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div> 
+            <div data-bind="with:signup.js "> <!-- not working, reference is wrong -->
+                <h2 data-bind="ifnot: parent.showContent"> Toogle: message now visible.  </h2>
+                <!-- Doesnt work atm, because HTML can't find the showContent observable object. The reference is incorrect/ missing something -->
+                <!--  Message above should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
+                <div class="collapse navbar-collapse" id="navbarNav">
 
 
-                <ul class="navbar-nav" data-bind="foreach: menuElements">
+                    <ul class="navbar-nav" data-bind="foreach: menuElements">
 
-                    <li class="nav-item" data-bind="css: $parent.isActive($data)">
+                        <li class="nav-item" data-bind="css: $parent.isActive($data)">
 
-                        <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
-                            <span data-bind="text: $data"></span>
-                        </a>
-                    </li>
-                </ul>
+                            <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
+                                <span data-bind="text: $data"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
+</nav>
 
     <div data-bind="component: {name: currentComponent}"></div>
-
-
-
-
-
-
-
-
 
     <search></search>
 
