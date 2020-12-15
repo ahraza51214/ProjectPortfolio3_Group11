@@ -38,6 +38,7 @@ namespace DataServiceLib
 
         }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ActorsKnownForTitles>().ToTable("actors_known_for_titles");
