@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{A4142D81-FE78-4121-9B26-62BE55865485}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/wwwroot/index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/wwwroot/css/style.css">
     <Files>
       <File FileName="WebService/wwwroot/js/BookmarkviewModel.js" Line="1" Column="1" />
-      <File FileName="WebService/wwwroot/index.html" Line="9" Column="40" />
+      <File FileName="WebService/wwwroot/index.html" Line="9" Column="30" />
       <File FileName="DataServiceLib/DataService/SearchDataService.cs" Line="36" Column="1" />
       <File FileName="WebService/appsettings.json" Line="10" Column="29" />
       <File FileName="WebService/appsettingsLocal.Development.json" />
@@ -14,6 +14,7 @@
       <File FileName="WebService/Controller/BookmarkController.cs" Line="72" Column="59" />
       <File FileName="WebService/Controller/UsersController.cs" Line="82" Column="9" />
       <File FileName="WebService/wwwroot/css/style.css" Line="1" Column="1" />
+      <File FileName="WebService/wwwroot/js/SearchviewModel.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,9 +29,10 @@
               </Node>
               <Node name="Controller" expanded="True" />
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+                <Node name="css" expanded="True">
+                  <Node name="style.css" selected="True" />
+                </Node>
                 <Node name="js" expanded="True" />
-                <Node name="index.html" selected="True" />
               </Node>
             </Node>
           </Node>
