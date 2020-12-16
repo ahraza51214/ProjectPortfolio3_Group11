@@ -2,18 +2,13 @@
     <h1>Search</h1>
 </div>
 
-
 <div>
-
     <button data-bind="click: getSearch">GetSearch</button>
     Userid <input data-bind="value: userId" required>
-
     <ul data-bind="foreach:  mysearch">
-
         <!--shows the search history of 1 user-->
         <li>
             <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span>
-
         </li>
     </ul>
 
@@ -21,17 +16,13 @@
     <h4>
         SearchInput
         <input data-bind="value: SearchInput" required>
-
         Page
         <input data-bind="value: page" required>
         Result Size
         <input data-bind="value: pageSize" required>
-
-
     </h4>
 
     <button data-bind="click: createSearch">Search</button>
-
     <button data-bind="click: next">next</button>
     <button data-bind="click: prev">prev</button>
     <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
@@ -45,8 +36,6 @@
             </div>
             <span data-bind="text: JSON.stringify(search)  "></span>
             <!--converts the object to JSON-->
-
         </li>
     </ul>
-
 </div>

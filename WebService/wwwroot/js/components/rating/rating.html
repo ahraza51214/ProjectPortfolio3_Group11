@@ -1,26 +1,24 @@
-﻿<div>
-    <h2>Rating</h2>
-</div>
+﻿ <div class="col-6">
+     <h3>Rating</h3>
+ </div>
+ <div class="row">
+     <div class="col-2">
+         <input type="text" class="form-control" placeholder="UserId" aria-label="UserId" data-bind="value: userId " required>
+     </div>
+     <div class="col-4">
+         <input type="text" class="form-control" placeholder="Tconst" aria-label="Tconst" data-bind="value: tconst" required>
+     </div>
+     <div class="col-2">
+         <input type="text" class="form-control" placeholder="Rate" aria-label="Rate" data-bind="value: titleIndividRating" required>
+     </div>
+     <button type="submit" class="btn btn-primary" data-bind="click: getRating">getRating</button>
+     <button type="submit" class="btn btn-info" data-bind="click: createRating">createNewRating</button>
+ </div>
 
-<div>
+ <div data-bind="text: responseMessage  "> </div>
 
-    <button data-bind="click: getRating">getRating</button>
-
-    <div data-bind="text: responseMessage  "> </div>
-
-
-    <ul data-bind="foreach: ratings">
-        <li>
-            <h3>  <span data-bind="text:  'userid '+ userId + ' tConst: ' + tConst + ' rate: ' + titleIndividRating + ' Date: ' + userTitleRateDate"></span> </h3>
-
-        </li>
-    </ul>
-    <button data-bind="click: createRating">createNewRating</button>
-
-
-    <h4>
-        UserId <input data-bind="value: userId " required>
-        Tconst <input data-bind="value: tconst" required>
-        Rate <input data-bind="value: titleIndividRating" required>
-    </h4>
-</div>
+ <ul data-bind="foreach: ratings">
+     <li>
+         <h3>  <span data-bind="text:  'userid '+ userId + ' tConst: ' + tConst + ' rate: ' + titleIndividRating + ' Date: ' + userTitleRateDate"></span> </h3>
+     </li>
+ </ul>

@@ -41,8 +41,7 @@ namespace ProjectPortfolio2_Group11.Controller
 
         [HttpGet("{userId}")] // to get every bookmark from userId
         public IActionResult GetBookmarks(int userId)
-        { 
-
+        {
             var response = " bookmark not found";
             var bookmark = _dataServiceFacade.BookmarkingDs.GetBookmarks(userId);
                if (bookmark.Count==0  ) // JSON is returned, counts JSON elements

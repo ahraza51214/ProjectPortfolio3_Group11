@@ -60,7 +60,6 @@ namespace ProjectPortfolio2_Group11.Controller
             {
                return BadRequest("invalid rating");
             }
-
             return Ok(_dataServiceFacade.RatingDs.CreateRating(userTitleRate));
         }
 

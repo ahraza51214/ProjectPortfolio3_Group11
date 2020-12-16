@@ -1,34 +1,34 @@
-﻿﻿<div>
-
-    <button data-bind="click: deleteUser">deleteUsers</button>
-
-    <div> </div>
-
-    <!--handles feedback to the users-->
-
-    <h4>
-        userId <input data-bind="value: userId " required> </h4>
-
-
-
-            <h4>
-                Name
-                <input data-bind="value: name" required>
-
-                Age
-                <input data-bind="value: age" required>
-
-                Username
-                <input data-bind="value: username" required>
-
-                Language
-                <input data-bind="value: language" required>
-                Password
-                <input data-bind="value: password" required>
-                Salt
-                <input data-bind="value: salt" required>
-            </h4>
-
-            <button data-bind="click: createUsers">createUsers</button>
-            <button data-bind="click: updateUsers">updateUsers</button>
-</div>
+﻿<form class="col-6">
+    <h3>Register</h3>
+    <div class="mb-3">
+        <label class="form-label">UserId</label>
+        <input class="form-control" data-bind="value: userId" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input class="form-control" data-bind="value: name" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input class="form-control" data-bind="value: age" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input class="form-control" data-bind="value: username" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Language</label>
+        <input class="form-control" data-bind="value: language" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" data-bind="value: password" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Salt</label>
+        <input class="form-control" data-bind="value: salt" required>
+    </div>
+    <button type="submit" class="btn btn-primary" data-bind="click: createUsers">Submit</button>
+    <button type="submit" class="btn btn-warning" data-bind="click: updateUsers">UpdateUser</button>
+    <button type="submit" class="btn btn-danger" data-bind="click: deleteUser">DeleteUser</button>
+</form>

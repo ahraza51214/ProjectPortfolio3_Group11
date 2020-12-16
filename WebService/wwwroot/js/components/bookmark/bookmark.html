@@ -1,28 +1,22 @@
-﻿<div>
-    <h2>Bookmark</h2>
+﻿<div class="col-6">
+    <h3>Bookmark</h3>
+</div>
+<div class="row">
+    <div class="col-2">
+        <input type="text" class="form-control" placeholder="UserId" aria-label="UserId" data-bind="value: userId " required>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" placeholder="Nconst" aria-label="Nconst" data-bind="value: nconst" required>
+    </div>
+    <button type="submit" class="btn btn-primary" data-bind="click: createBookmark">CreateBookmark</button>
+    <button type="submit" class="btn btn-danger" data-bind="click: deleteBookmark">DeleteBookmark</button>
+    <button type="submit" class="btn btn-info" data-bind="click: getBookmarks">GetBookmarks</button>
 </div>
 
-<div>
+<div data-bind="text: responseMessage  "> </div>
 
-    <button data-bind="click: getBookmarks">getBookmarks</button>
-    <button data-bind="click: deleteBookmark">deleteBookmark</button>
-
-    <div data-bind="text: responseMessage  "> </div>
-
-
-    <ul data-bind="foreach: bookmarks">
-        <li>
-            <h3>  <span data-bind="text:  'userid '+ userId + '   ' + nConst  "></span> </h3>
-
-        </li>
-    </ul>
-    <button data-bind="click: createBookmark">createNewBookmark</button>
-
-
-    <h4>
-        UserId <input data-bind="value: userId " required>
-        Nconst <input data-bind="value: nconst" required>
-    </h4>
-
-
-</div>
+<ul data-bind="foreach: bookmarks">
+    <li>
+        <h3><span data-bind="text:  '    '+ userId + '   ' + nConst  "></span> </h3>
+    </li>
+</ul>

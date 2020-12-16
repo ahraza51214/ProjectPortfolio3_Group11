@@ -1,18 +1,13 @@
 define(['knockout'], (ko) => {
     return function () {
-
-        //let User = ko.observableArray(
-        //    [{ language: "", name: "", username: "", age: "" }]);
-
-       
-        //}
+        
        let responseMessage  ;
-        let password;
-        let userId  ;
-        let showContent  ;
+       let password;
+       let userId  ;
+       let showContent  ;
      
 
-        let getUsers = function () {
+       let getUsers = function () {
             fetch("api/users/" + userId() + "/" + password())
 
                 .then(function (response) {
@@ -35,20 +30,11 @@ define(['knockout'], (ko) => {
                 )
                 .then(function (data) {
                     User(data);
-
                 });
-
-
-        }
-        
-
+       }
        
-
-
-
-        return {
-         getUsers,userId, responseMessage, password, getUsers, User, showContent  
-        };
- 
+       return {
+           getUsers,userId, responseMessage, password, User, showContent  
+       };
     } 
 }); 

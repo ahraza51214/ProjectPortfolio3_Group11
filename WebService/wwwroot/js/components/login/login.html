@@ -1,31 +1,13 @@
-﻿<div class="border">
- 
-    <form>
-     
- 
+﻿<form class="col-6">
+    <h3>Login</h3>
+    <div class="mb-3">
+        <label class="form-label">UserId</label>
+        <input class="form-control" data-bind="value: parent.userId" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" data-bind="value: parent.password" required>
+    </div>
+    <button type="submit" class="btn btn-primary" data-bind="click:  parent.getUsers">Submit</button>
+</form>
 
-
-        <!--<h4 data-bind="text: responseMessage  ">
-        </h4>
-
-        <ul data-bind="foreach: User">
-
-            each User Objects will have these attributes shown after clicking getUsers
-            <li>
-                <h5>
-                    <span data-bind="text: 'username: ' + username+ ' name:  '+ name + ' age:  ' + age + ' language: ' + language"></span>
-
-                </h5>
-            </li>
-        </ul>
-
-
-        <input data-bind="value: userId" required>
-        <label>UserId</label><br>
-        <input data-bind="value: password" required>
-        <label>password</label><br>
-        <div></div>
-        <button data-bind="click:  getUsers">login</button>-->
-      
-    </form>
-</div>

@@ -4,6 +4,9 @@
         knockout: "lib/knockout/knockout-latest",
         text: "lib/require-text/text.min",
          dataService: "dataService"
+    },
+    shim: {
+        bootstrap: ['jquery']
     }
 });
 
@@ -49,9 +52,6 @@ require(['knockout', 'text'], (ko) => {
     });
 });
 
-
 require(['knockout', 'FrontPageviewModel'], function (ko, fpvm) {
-
     ko.applyBindings(fpvm);
-
 });

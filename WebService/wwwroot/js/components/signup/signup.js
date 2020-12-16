@@ -28,12 +28,8 @@
             fetch("api/users", {
                 method: "POST", body: JSON.stringify({ age: +age(), name: name(), username: username(), language: language(), password: password(), hash: salt() }), headers
             })
-
                 .then(response => response.json()
-
                 )
-
-
         }
 
         let updateUsers = function () {

@@ -1,6 +1,5 @@
 ﻿body {
-
-  /*  background-image: url("sunset.gif"); */
+    background-image: url("sunset.gif");
     background-size: cover
 }
 
@@ -18,7 +17,7 @@ h2 {
 
 h3 {
     font-size: 18px;
-    color: darkgoldenrod;
+    color: #0b22b8;
 }
 
 h4 {
@@ -49,7 +48,7 @@ divc {
 
     to {
         color: navajowhite;
-        color: darkred;
+        color: #8b0000;
     }
     
 

@@ -95,7 +95,7 @@ namespace ProjectPortfolio2_Group11.Controller
             {
                 prev = Url.Link(nameof(AddToSearchHistory), new { page = page - 1, pageSize });
             }
-
+            
             string next = null;
             
             if (page < (int)Math.Ceiling((double)count / pageSize) - 1)

@@ -1,67 +1,33 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link href="style.css" rel="stylesheet" />
-    <link href="js/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <!--reference doesnt work, if the css inst located in the same folder as index for some reaons-->
-    <!-- this reference doesnt work <link href="css/style.css" rel="stylesheet" />, the one at line 4 does  -->
- 
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
 
-<body>
-
-    <h1>Movie application</h1>
-    <h3>Login Component</h3>
-
-    <input data-bind="value: parent.userId" required>
-    <label>UserId</label><br>
-    <input data-bind="value: parent.password" required>
-    <label>password</label><br>
-    <button data-bind="click:  parent.getUsers">login</button>
-
-    <div data-bind="if: showContent">
-    
-
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navigation</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div>
-
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-
-
-                    <ul class="navbar-nav" data-bind="foreach: menuElements">
-
-                        <li class="nav-item" data-bind="css: $parent.isActive($data)">
-
-
-                            <!-- Doesnt work, because HTML can't find the showContent observable object. The reference to showContent, from login.js, is incorrect/ missing something -->
-                            <!--  the Message   should only be visible when showContent is false, and be invisible when true. showContent is true when User is logged in  -->
-
-                            <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
-                                <span data-bind="text: $data"></span>
-
-                            </a>
-
-                        </li>
-                    </ul>
-                </div>
+<body class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 25px" href="#" >Movie Application</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" data-bind="foreach: menuElements">
+                    <li class="nav-item" data-bind="css: $parent.isActive($data)">
+                        <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
+                            <span data-bind="text: $data"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-        </nav>
-
-        <div data-bind="component: {name: currentComponent}"></div>
+        </div>
     </div>
-    <login></login>
-    <search></search>
+</nav>
 
+<div data-bind="component: {name: currentComponent}"></div>
 
-    <script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
-
+<script data-main="js/main.js" src="js/lib/require.js/require.js"></script>
 </body>
-    </html>
+</html>
