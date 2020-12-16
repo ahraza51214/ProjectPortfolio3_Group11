@@ -1,23 +1,21 @@
 define(['knockout'], (ko) => {
-    return function () {
+    return function (params) {
 
-        //let User = ko.observableArray(
-        //    [{ language: "", name: "", username: "", age: "" }]);
-
-        //let selectedComponent = ko.observable('login');
-
-        //let changeContent = () => {
-        //    if (selectedComponent() === "login") {
-        //        selectedComponent('signup');
-        //    } else {
-
-        //        selectedComponent('login');
-        //    }
-        //}
-      /*  let responseMessage = ko.observable();
-        let password = ko.observable();
+        let showContent = params.showContent;
+        
+       
         let userId = ko.observable();
-        let showContent = ko.observable(false);
+
+        let User = ko.observableArray(
+            [{ language: "", name: "", username: "", age: "" }]);
+
+     
+
+       
+       let responseMessage = ko.observable();
+        let password = ko.observable();
+ 
+        
      
 
         let getUsers = function () {
@@ -36,26 +34,26 @@ define(['knockout'], (ko) => {
                          
                         responseMessage("Login succesful!");
                     }
-                    
+                
                     return response.json();
                 }
 
                 )
                 .then(function (data) {
                     User(data);
-
+                 
                 });
 
 
         }
-        */
+      
 
        
 
 
 
         return {
-        /* getUsers,userId, responseMessage, password, getUsers, User, showContent */
+          getUsers,userId, responseMessage, password, getUsers, User,showContent
         };
  
     } 

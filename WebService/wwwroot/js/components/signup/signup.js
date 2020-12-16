@@ -1,9 +1,6 @@
 ﻿define(['knockout'], function (ko) {
     return function () {
 
-     /*   let User = ko.observableArray(
-            [{ language: "", name: "", username: "", age: "" }]); */
-
         let userId = ko.observable();
         let name = ko.observable();
         let age = ko.observable('');
@@ -12,12 +9,6 @@
         let password = ko.observable();
         let salt = ko.observable();
        
-    
-
-
-        /*let Userbool = () => UserState(true);
-        let CancelState = () => UserState(false); */
-
 
         let deleteUser = url => fetch("api/users/" + userId(), { method: "DELETE" });
 
@@ -64,10 +55,7 @@
             updateUsers,
             password,
             salt
-           
-            //selectedComponent,
-            //changeContent
- 
+        
         };
     }
 });
