@@ -1,6 +1,6 @@
 ﻿define(['knockout'], (ko) => {
     let currentComponent = ko.observable('login');
-    let menuElements = ["Login", "EditUser", "Bookmark", "Rating", "SearchHistory"];
+    let menuElements = ["Login", "Edit User", "Bookmark", "Rating", "Search History"];
     let showContent = ko.observable(false);
     let currentParams = ko.observable({showContent: showContent});
     
