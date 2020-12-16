@@ -26,6 +26,13 @@ require(['knockout', 'text'], (ko) => {
 });
 
 require(['knockout', 'text'], (ko) => {
+    ko.components.register("searchhistory", {
+        viewModel: { require: "components/searchhistory/searchhistory" },
+        template: { require: "text!components/searchhistory/searchhistory.html" }
+    });
+});
+
+require(['knockout', 'text'], (ko) => {
     ko.components.register("search", {
         viewModel: { require: "components/search/search" },
         template: { require: "text!components/search/search.html" }

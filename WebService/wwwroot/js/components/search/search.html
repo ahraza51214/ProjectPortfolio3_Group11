@@ -1,33 +1,25 @@
 ﻿<div>
     <h1>Search</h1>
 </div>
+<div class="mb-3">
+    <label class="form-label">Search Input</label>
+    <input type="search" class="form-control" data-bind="value: SearchInput" required>
+</div>
+<button type="submit" class="btn btn-primary" data-bind="click: createSearch">Search</button>
 
-<label class="form-label">Search Input</label>
-<input type="search" class="form-control" data-bind="value: SearchInput" required>
+<div class="row">
+    <div class="col-4">
+        UserId<input type="text" class="form-control" placeholder="UserId" aria-label="UserId" data-bind="value: userId " required>
+    </div>
+    <div class="col-4">
+        Page<input type="text" class="form-control" placeholder="Page" aria-label="Page" data-bind="value: page" required>
+    </div>
+    <div class="col-4">
+        Result Size<input type="text" class="form-control" placeholder="PageSize" aria-label="PageSize" data-bind="value: pageSize" required>
+    </div>
+</div>
 
-<div>
-    <button data-bind="click: getSearch">GetSearch</button>
-    Userid <input data-bind="value: userId" required>
-    <ul data-bind="foreach:  mysearch">
-        <!--shows the search history of 1 user-->
-        <li>
-            <span data-bind="text:   'Search_Input: ´' + storedInput + '´' + ' SearchDate: '+ dateTime "></span>
-        </li>
-    </ul>
-
-
-    <h4>
-        SearchInput
-        <input data-bind="value: SearchInput" required>
-        Page
-        <input data-bind="value: page" required>
-        Result Size
-        <input data-bind="value: pageSize" required>
-    </h4>
-
-    <button data-bind="click: createSearch">Search</button>
-    <button data-bind="click: next">next</button>
-    <button data-bind="click: prev">prev</button>
+<div class="mb-3">
     <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
     <ul data-bind="foreach:  resultSearch">
         <!--shows each Search Object and count value, for each resultSearch Observablearray that gets called-->
@@ -42,3 +34,5 @@
         </li>
     </ul>
 </div>
+<button type="submit" class="btn btn-primary" data-bind="click: next"><span data-bind="click: createSearch">next</span></button>
+<button type="submit" class="btn btn-primary" data-bind="click: prev"><span data-bind="click: createSearch">prev</span></button>
