@@ -1,40 +1,34 @@
 ﻿<Properties StartupConfiguration="{A4142D81-FE78-4121-9B26-62BE55865485}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/wwwroot/index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebService/Controller/UsersController.cs">
     <Files>
-<<<<<<< Updated upstream
-      <File FileName="WebService/wwwroot/js/BookmarkviewModel.js" Line="49" Column="26" />
-      <File FileName="WebService/wwwroot/js/UserviewModel.js" Line="85" Column="78" />
-      <File FileName="WebService/wwwroot/index.html" Line="1" Column="1" />
-=======
       <File FileName="WebService/wwwroot/js/BookmarkviewModel.js" Line="1" Column="1" />
-      <File FileName="WebService/wwwroot/index.html" Line="1" Column="1" />
-      <File FileName="DataServiceLib/DataService/SearchDataService.cs" />
-      <File FileName="WebService/appsettings.json" />
+      <File FileName="WebService/wwwroot/index.html" Line="9" Column="40" />
+      <File FileName="DataServiceLib/DataService/SearchDataService.cs" Line="36" Column="1" />
+      <File FileName="WebService/appsettings.json" Line="1" Column="1" />
       <File FileName="WebService/appsettingsLocal.Development.json" />
-      <File FileName="DataServiceLib/Raw11Context.cs" />
->>>>>>> Stashed changes
+      <File FileName="DataServiceLib/Raw11Context.cs" Line="40" Column="1" />
+      <File FileName="WebService/appsettingsRaw11.json" Line="1" Column="1" />
+      <File FileName="WebService/wwwroot/js/main.js" Line="1" Column="1" />
+      <File FileName="WebService/wwwroot/js/lib/require.js/require.js" Line="1" Column="1" />
+      <File FileName="DataServiceLib/DataService/UsersDataService.cs" Line="25" Column="1" />
+      <File FileName="WebService/Controller/BookmarkController.cs" Line="72" Column="59" />
+      <File FileName="WebService/Controller/UsersController.cs" Line="82" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProjectPortfolio3_Group11" expanded="True">
-<<<<<<< Updated upstream
-=======
             <Node name="DataServiceLib" expanded="True">
               <Node name="DataService" expanded="True" />
             </Node>
->>>>>>> Stashed changes
             <Node name="WebService" expanded="True">
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="js" expanded="True" />
-                <Node name="index.html" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controller" expanded="True">
+                <Node name="UsersController.cs" selected="True" />
               </Node>
             </Node>
-<<<<<<< Updated upstream
-            <Node name="WebServiceTests" expanded="True" />
-=======
->>>>>>> Stashed changes
           </Node>
         </State>
       </Pad>
@@ -43,6 +37,9 @@
   <MonoDevelop.Ide.ItemProperties.WebService PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/Lenuska/Documents/GitHub/NewPortoflio3</String>
+  </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
