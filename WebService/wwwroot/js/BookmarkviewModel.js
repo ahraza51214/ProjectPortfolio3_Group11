@@ -1,15 +1,14 @@
 ﻿define(['knockout'], function (ko) {
-    //private part
+    
 
-    this.bookmarks = ko.observableArray(
+     let bookmarks = ko.observableArray(
         [{ nConst: "", userId: "" }]);
 
     let nconst = ko.observable();
     let userId = ko.observable();
     let responseMessage = ko.observable();
 
-
-    let deleteBookmark = url => fetch("api/bookmark/" + userId() ,{ method: "DELETE" });
+    let deleteBookmark = url => fetch("api/bookmark/" + userId()+"/"+nconst(), { method: "DELETE" });
 
 
     let createBookmark = function () {
@@ -19,6 +18,7 @@
         fetch("api/bookmark", {
             method: "POST", body: JSON.stringify({ nConst: nconst(), userId: +userId() }), headers
         })
+
             .then(response => response.json())
 
     }
@@ -31,8 +31,8 @@
             .then(function (response) {
 
                 if (response.status === 404 || response.status === 400) {
-                    responseMessage("Invalid bookmark! Please type a valid userId or nconst!");
-
+                    responseMessage("Invalid request! Please type a valid userId!");
+                    bookmarks("");
                     throw new Error(response.status + " Bookmark Not found ");
                 }
                 if (response.status === 200) {
@@ -53,14 +53,12 @@
     }
 
 
-
-
     return {
-    nconst, userId,
+        nconst, userId,
 
         bookmarks, getBookmarks, responseMessage,
         deleteBookmark, createBookmark
 
 
-        };
-    });
+    };
+});
