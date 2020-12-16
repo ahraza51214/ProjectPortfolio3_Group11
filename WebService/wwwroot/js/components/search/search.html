@@ -32,8 +32,15 @@
 
     <button data-bind="click: createSearch">Search</button>
 
-    <button data-bind="click: next">next</button>
-    <button data-bind="click: prev">prev</button>
+   <button data-bind="click:next ">
+        <span data-bind="click: createSearch">next</span>
+
+    </button>
+   <button data-bind=" click: prev">
+     
+       <span data-bind="click: createSearch">prev</span>
+
+   </button>
     <div> <h2 data-bind="text: responseMessage  ">  </h2></div>
     <ul data-bind="foreach:  resultSearch">
         <!--shows each Search Object and count value, for each resultSearch Observablearray that gets called-->

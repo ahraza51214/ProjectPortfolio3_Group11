@@ -12,11 +12,11 @@
 
     <h1>Movie application</h1>
     <h3>Login Component</h3>
- 
+
     <label>UserId</label><br>
-  
+
     <label>password</label><br>
- 
+
 
     <div data-bind="if: showContent">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +33,7 @@
                     <ul class="navbar-nav" data-bind="foreach: menuElements">
 
                         <li class="nav-item" data-bind="css: $parent.isActive($data)">
- 
+
                             <a class="nav-link" href="#" data-bind="click: $parent.changeComponent">
                                 <span data-bind="text: $data"></span>
 
@@ -48,7 +48,6 @@
         </nav>
     </div>
     <div data-bind="component: {name: currentComponent,params:currentParams}"></div>
-    
  
 
     <search></search>

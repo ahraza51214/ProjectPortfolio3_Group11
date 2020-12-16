@@ -1,7 +1,7 @@
 ﻿body {
-
-  /*  background-image: url("sunset.gif"); */
-    background-size: cover
+    /*   background-image: url("imdb.jpg");*/
+    background-image: url("violet.jpg");
+    background-size: cover;
 }
 
 h1 {
