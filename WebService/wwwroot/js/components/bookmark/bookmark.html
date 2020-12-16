@@ -8,9 +8,11 @@
     <div class="col-4">
         <input type="text" class="form-control" placeholder="Nconst" aria-label="Nconst" data-bind="value: nconst" required>
     </div>
-    <button type="submit" class="btn btn-primary" data-bind="click: createBookmark">CreateBookmark</button>
-    <button type="submit" class="btn btn-danger" data-bind="click: deleteBookmark">DeleteBookmark</button>
-    <button type="submit" class="btn btn-info" data-bind="click: getBookmarks">GetBookmarks</button>
+    <div class="d-grid gap-2 d-md-block">
+        <button type="submit" class="btn btn-primary" data-bind="click: createBookmark">Create Bookmark</button>
+        <button type="submit" class="btn btn-danger" data-bind="click: deleteBookmark">Delete Bookmark</button>
+        <button type="submit" class="btn btn-info" data-bind="click: getBookmarks">Get Bookmarks</button>
+    </div>
 </div>
 
 <div data-bind="text: responseMessage  "> </div>

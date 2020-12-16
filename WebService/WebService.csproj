@@ -254,6 +254,11 @@
       <_ContentIncludedByDefault Remove="wwwroot\js\lib\require.js\require.min.js.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\require-text\text.js" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\require-text\text.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\ComponentsStyling\bookmark.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\ComponentsStyling\login.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\ComponentsStyling\rating.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\ComponentsStyling\search.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\ComponentsStyling\signup.css" />
     </ItemGroup>
 
 </Project>

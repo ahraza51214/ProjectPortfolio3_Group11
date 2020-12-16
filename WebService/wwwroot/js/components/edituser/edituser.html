@@ -1,5 +1,5 @@
 ﻿<form class="col-6">
-    <h3>Register</h3>
+    <h3>Edit user</h3>
     <div class="mb-3">
         <label class="form-label">UserId</label>
         <input class="form-control" data-bind="value: userId" required>
@@ -24,11 +24,6 @@
         <label class="form-label">Password</label>
         <input type="password" class="form-control" data-bind="value: password" required>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Salt</label>
-        <input class="form-control" data-bind="value: salt" required>
-    </div>
-    <button type="submit" class="btn btn-primary" data-bind="click: createUsers">Submit</button>
-    <button type="submit" class="btn btn-warning" data-bind="click: updateUsers">UpdateUser</button>
-    <button type="submit" class="btn btn-danger" data-bind="click: deleteUser">DeleteUser</button>
+    <button type="submit" class="btn btn-warning" data-bind="click: updateUsers">Update User</button>
+    <button type="submit" class="btn btn-danger" data-bind="click: deleteUser">Delete User</button>
 </form>

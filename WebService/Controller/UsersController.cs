@@ -29,27 +29,9 @@ namespace ProjectPortfolio2_Group11.Controller
             _mapper = mapper;
             _configuration = configuration;
         }
-
-
-        /*  [HttpGet("{userId}", Name = nameof(GetUser))]
-
-
-          public IActionResult GetUser(int userId)
-          {
-              var user = _dataServiceFacade.UsersDs.GetUser(userId);
-
-              if (user == null)
-              {
-                  return NotFound("user not found");
-              }
-              return Ok(_mapper.Map<UsersDto>(user));
-          } */
-
-
-
+        
+        
         [HttpGet("{userId}/{password}")]
-
-
         public IActionResult GetUser(int userId,string password)
         {
             var user = _dataServiceFacade.UsersDs.GetUser(userId,password);
@@ -60,9 +42,7 @@ namespace ProjectPortfolio2_Group11.Controller
             }
             return Ok(_mapper.Map<UsersDto>(user));
         }
-
-
-
+        
         [HttpPost]
         public IActionResult CreateUsers(UsersForCreationDto usersForCreationDto)
         {
@@ -94,7 +74,6 @@ namespace ProjectPortfolio2_Group11.Controller
             response = " user deleted succesfully";
             return CreatedAtRoute(null, userId + response);
         }
-        
         
         //For Authentication
         [HttpPost("register")]

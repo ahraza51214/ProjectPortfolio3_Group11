@@ -9,9 +9,6 @@ namespace DataServiceLib.DBObjects
         public string Name { get; set; }
         public int Age { get; set; }
         public string Language { get; set; }
-
         public string Password { get; set; }
-        public string Salt { get; set; }
-
     }
 }

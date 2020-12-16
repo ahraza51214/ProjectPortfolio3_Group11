@@ -45,7 +45,6 @@ namespace DataServiceLib.DataService
             dbUser.Language = user.Language;
             dbUser.Username = user.Username;
             dbUser.Password = user.Password;
-            dbUser.Salt = user.Salt;
             _db.SaveChanges();
             return true;
         }

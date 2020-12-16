@@ -11,8 +11,10 @@
      <div class="col-2">
          <input type="text" class="form-control" placeholder="Rate" aria-label="Rate" data-bind="value: titleIndividRating" required>
      </div>
-     <button type="submit" class="btn btn-primary" data-bind="click: getRating">getRating</button>
-     <button type="submit" class="btn btn-info" data-bind="click: createRating">createNewRating</button>
+     <div class="d-grid gap-2 d-md-block">
+         <button type="submit" class="btn btn-primary" data-bind="click: createRating">Create Rating</button>
+         <button type="submit" class="btn btn-info" data-bind="click: getRating">Get Rating</button>
+     </div>
  </div>
 
  <div data-bind="text: responseMessage  "> </div>
