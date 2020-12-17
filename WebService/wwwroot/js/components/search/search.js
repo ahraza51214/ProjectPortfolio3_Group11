@@ -9,7 +9,7 @@
         let page = ko.observable(0);
         let pageSize = ko.observable(50);
         let responseMessage = ko.observable();
-        let userId = ko.observable(); 
+        let userId = ko.observable(0); 
    
 
         next = function () {
