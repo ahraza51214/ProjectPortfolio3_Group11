@@ -1,12 +1,12 @@
 ﻿define(['knockout'], function (ko) {
     //private part
-    return function () {
+    return function (params) {
 
         let bookmarks = ko.observableArray(
             [{ nConst: "", userId: "" }]);
 
         let nconst = ko.observable();
-        let userId = ko.observable();
+        let userId = params.userId;
         let responseMessage = ko.observable();
 
         let deleteBookmark = url => fetch("api/bookmark/" + userId() + "/" + nconst(), { method: "DELETE" });

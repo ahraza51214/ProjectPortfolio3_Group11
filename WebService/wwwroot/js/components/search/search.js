@@ -1,5 +1,5 @@
 ﻿define(['knockout'], function (ko) {
-    return function () {
+    return function (params) {
 
         resultSearch = ko.observableArray(
             [{ search: "PrimaryTitles", count: "" }]
@@ -9,7 +9,8 @@
         let page = ko.observable(0);
         let pageSize = ko.observable(50);
         let responseMessage = ko.observable();
-        let userId = ko.observable(0);
+        let userId = ko.observable(); 
+   
 
         next = function () {
             page(page() + 1);

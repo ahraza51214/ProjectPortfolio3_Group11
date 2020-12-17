@@ -2,8 +2,9 @@
     let currentComponent = ko.observable('login');
     let menuElements = ["Login", "EditUser", "Bookmark", "Rating", "SearchHistory"];
     let showContent = ko.observable(false);
-    let currentParams = ko.observable({showContent: showContent});
-    
+    let userId = ko.observable(0);
+   
+
     let changeComponent = element => {
         currentComponent(element.toLowerCase());
     }
@@ -16,8 +17,8 @@
         currentComponent,
         menuElements,
         showContent,
-        currentParams,
+        
         changeComponent,
-        isActive, 
+        isActive,  userId
     };
 });

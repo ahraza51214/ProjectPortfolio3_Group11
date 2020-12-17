@@ -1,7 +1,7 @@
 ﻿define(['knockout'], function (ko) {
-    return function () {
+    return function (params) {
 
-        let userId = ko.observable(0);
+        let userId = params.userId;
 
         let mysearch = ko.observableArray(
             [{ storedInput: "", dateTime: "" }]);
@@ -10,7 +10,7 @@
             fetch("api/search/" + userId())
                 .then(function (response) {
                     if (response.status === 404) {
-                        mysearch("");
+                        mysearch(""); //hides the input and datetime if status code is 404
                     }
                     return response.json();
                 })

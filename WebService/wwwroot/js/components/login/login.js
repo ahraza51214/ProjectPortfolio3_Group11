@@ -5,12 +5,14 @@ define(['knockout'], (ko) => {
             [{ language: "", name: "", username: "", age: "" }]);
         let responseMessage = ko.observable();
         let password = ko.observable();
-        let userId = ko.observable();
+        let userId = params.userId;
         let showContent = params.showContent;
         let name = ko.observable();
         let age = ko.observable('');
         let username = ko.observable();
         let language = ko.observable();
+
+
 
         let getUsers = function () {
             fetch("api/users/" + userId() + "/" + password())

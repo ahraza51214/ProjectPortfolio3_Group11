@@ -1,7 +1,7 @@
 ﻿define(['knockout'], function (ko) {
-    return function () {
+    return function (params) {
         
-        let userId = ko.observable();
+        let userId = params.userId
         let name = ko.observable();
         let age = ko.observable('');
         let username = ko.observable();

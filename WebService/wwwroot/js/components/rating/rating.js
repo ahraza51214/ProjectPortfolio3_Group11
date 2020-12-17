@@ -1,11 +1,11 @@
 ﻿define(['knockout'], function (ko) {
-    return function () {
+    return function (params) {
 
     let ratings = ko.observableArray(
         [{ userId: "", titleIndividRating: "", tConst: "", userTitleRateDate: "" }]);
 
     let tconst = ko.observable();
-    let userId = ko.observable();
+    let userId = params.userId;
     let titleIndividRating = ko.observable();
     let responseMessage = ko.observable();
 

@@ -10,9 +10,12 @@
     </div>
     <button type="submit" class="btn btn-primary" data-bind="click: getUsers">Login</button>
 
+
+
+
     <h4 data-bind="text: responseMessage  ">
     </h4>
-    
+
     <ul data-bind="foreach: User">
         <!--each User Objects will have these attributes shown after clicking getUsers-->
         <li>
@@ -22,6 +25,7 @@
         </li>
     </ul>
 </form>
+ 
 
 <form class="col-4">
     <h3>Signup</h3>
@@ -47,4 +51,4 @@
     </div>
     <button type="submit" class="btn btn-primary" data-bind="click: createUsers">Signup</button>
 </form>
-
+ 
