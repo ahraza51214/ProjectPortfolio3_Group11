@@ -28,6 +28,7 @@ namespace DataServiceLib.DataService
 
         public void CreateUser(Users user)
         {
+
             _db.Users.Add(user);
             _db.SaveChanges();
         }
